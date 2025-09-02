@@ -7,65 +7,168 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="خدمة سطحة جدة الحوباني - نقل المركبات والشاحنات بأمان وسرعة في جدة والمناطق المجاورة. خدمة 24 ساعة مع فريق محترف ومعدات حديثة."
 >
   <!-- Hero Section -->
-  <section class="bg-gradient-to-br from-primary-50 to-primary-100 py-12 px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <h1 class="text-4xl md:text-5xl font-bold text-primary-800 mb-6">
-        سطحة جدة الحوباني
-      </h1>
-      <p class="text-xl text-accent-700 mb-8 leading-relaxed">
-        خدمة نقل المركبات الأمثل في جدة والمناطق المجاورة<br>
-        سرعة في الاستجابة • أمان في النقل • خدمة 24 ساعة
+  <section class="bg-gradient-to-br from-primary-50 to-primary-100 py-16 px-4 relative overflow-hidden">
+    <!-- Background decoration -->
+    <div class="absolute top-0 left-0 w-full h-full opacity-5">
+      <svg class="w-full h-full" viewBox="0 0 400 400" fill="none">
+        <path d="M100 200C100 200 150 150 200 200S300 250 300 200" stroke="currentColor" stroke-width="2"/>
+        <circle cx="200" cy="200" r="3" fill="currentColor"/>
+      </svg>
+    </div>
+    
+    <div class="max-w-6xl mx-auto text-center relative">
+      <div class="mb-8">
+        <span class="inline-block bg-secondary-100 text-secondary-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          الخيار الأول في جدة منذ سنوات
+        </span>
+        <h1 class="text-4xl md:text-6xl font-bold text-primary-800 mb-6 leading-tight">
+          سطحة جدة الحوباني
+          <span class="block text-3xl md:text-4xl text-secondary-600 mt-2">خدمة متنقلة 24 ساعة</span>
+        </h1>
+      </div>
+      
+      <p class="text-xl md:text-2xl text-accent-700 mb-10 leading-relaxed max-w-4xl mx-auto">
+        نصل إليك أينما كنت في جدة خلال <strong class="text-primary-600">15 دقيقة</strong><br>
+        فريق محترف • معدات حديثة • أسعار شفافة • ثقة تامة
       </p>
       
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
         <a 
           href="tel:+966501234567"
-          class="inline-flex items-center px-8 py-3 bg-secondary-500 text-white rounded-lg font-semibold hover:bg-secondary-600 transition-colors duration-200 shadow-lg"
+          class="inline-flex items-center px-10 py-4 bg-secondary-500 text-white rounded-xl font-bold text-lg hover:bg-secondary-600 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
         >
-          <i data-feather="phone" class="h-5 w-5 ml-2"></i>
-          اطلب الخدمة الآن
+          <i data-feather="phone-call" class="h-6 w-6 ml-3 animate-pulse"></i>
+          اتصل الآن - خدمة فورية
         </a>
         
         <a 
-          href="/services"
-          class="inline-flex items-center px-8 py-3 bg-white text-primary-600 border-2 border-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-200"
+          href="https://wa.me/966501234567?text=مرحباً، أحتاج خدمة سطحة"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center px-10 py-4 bg-green-500 text-white rounded-xl font-bold text-lg hover:bg-green-600 transition-all duration-200 shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
         >
-          تصفح خدماتنا
-          <i data-feather="arrow-left" class="h-5 w-5 mr-2"></i>
+          <svg class="h-6 w-6 ml-3" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+          </svg>
+          واتساب مباشر
         </a>
+      </div>
+      
+      <!-- Trust indicators -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-primary-600">24/7</div>
+          <div class="text-sm text-accent-600">خدمة متواصلة</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-secondary-600">15</div>
+          <div class="text-sm text-accent-600">دقيقة وصول</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-600">100%</div>
+          <div class="text-sm text-accent-600">أمان مضمون</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-purple-600">جدة</div>
+          <div class="text-sm text-accent-600">وضواحيها</div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Services Preview -->
-  <section class="py-16 px-4 bg-white">
+  <section class="py-20 px-4 bg-white">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center text-accent-800 mb-12">خدماتنا</h2>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-accent-800 mb-4">خدماتنا المتميزة</h2>
+        <p class="text-xl text-accent-600 max-w-3xl mx-auto">
+          نقدم خدمات شاملة لنقل ومساعدة جميع أنواع المركبات في جدة بأعلى معايير الجودة والأمان
+        </p>
+      </div>
       
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center p-6 rounded-lg border border-accent-200 hover:shadow-lg transition-shadow duration-200">
-          <div class="bg-primary-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-            <i data-feather="truck" class="h-8 w-8 text-primary-600"></i>
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="group text-center p-8 rounded-2xl border-2 border-accent-100 hover:border-primary-300 hover:shadow-2xl transition-all duration-300 bg-gradient-to-b from-white to-accent-50">
+          <div class="bg-primary-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            <i data-feather="truck" class="h-10 w-10 text-primary-600"></i>
           </div>
-          <h3 class="text-xl font-semibold text-accent-800 mb-3">نقل المركبات</h3>
-          <p class="text-accent-600">نقل آمن وسريع للسيارات المعطلة والدراجات النارية</p>
+          <h3 class="text-2xl font-bold text-accent-800 mb-4">نقل المركبات</h3>
+          <p class="text-accent-600 mb-6 leading-relaxed">
+            سحب ونقل آمن لجميع أنواع السيارات والشاحنات والدراجات النارية من أي مكان في جدة
+          </p>
+          <ul class="text-sm text-accent-700 space-y-2">
+            <li class="flex items-center justify-center space-x-reverse space-x-2">
+              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+              <span>سيارات معطلة</span>
+            </li>
+            <li class="flex items-center justify-center space-x-reverse space-x-2">
+              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+              <span>حوادث الطرق</span>
+            </li>
+            <li class="flex items-center justify-center space-x-reverse space-x-2">
+              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+              <span>نقل بين المدن</span>
+            </li>
+          </ul>
         </div>
         
-        <div class="text-center p-6 rounded-lg border border-accent-200 hover:shadow-lg transition-shadow duration-200">
-          <div class="bg-secondary-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-            <i data-feather="clock" class="h-8 w-8 text-secondary-600"></i>
+        <div class="group text-center p-8 rounded-2xl border-2 border-accent-100 hover:border-secondary-300 hover:shadow-2xl transition-all duration-300 bg-gradient-to-b from-white to-secondary-50">
+          <div class="bg-secondary-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            <i data-feather="clock" class="h-10 w-10 text-secondary-600"></i>
           </div>
-          <h3 class="text-xl font-semibold text-accent-800 mb-3">خدمة 24 ساعة</h3>
-          <p class="text-accent-600">متوفرون على مدار الساعة لخدمتكم في أي وقت</p>
+          <h3 class="text-2xl font-bold text-accent-800 mb-4">خدمة 24 ساعة</h3>
+          <p class="text-accent-600 mb-6 leading-relaxed">
+            فريق الاستجابة السريعة متاح على مدار الساعة لضمان وصولنا إليك في أسرع وقت ممكن
+          </p>
+          <ul class="text-sm text-accent-700 space-y-2">
+            <li class="flex items-center justify-center space-x-reverse space-x-2">
+              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+              <span>استجابة سريعة</span>
+            </li>
+            <li class="flex items-center justify-center space-x-reverse space-x-2">
+              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+              <span>خدمة طوارئ</span>
+            </li>
+            <li class="flex items-center justify-center space-x-reverse space-x-2">
+              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+              <span>عطلات ومناسبات</span>
+            </li>
+          </ul>
         </div>
         
-        <div class="text-center p-6 rounded-lg border border-accent-200 hover:shadow-lg transition-shadow duration-200">
-          <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-            <i data-feather="shield-check" class="h-8 w-8 text-green-600"></i>
+        <div class="group text-center p-8 rounded-2xl border-2 border-accent-100 hover:border-green-300 hover:shadow-2xl transition-all duration-300 bg-gradient-to-b from-white to-green-50">
+          <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+            <i data-feather="shield-check" class="h-10 w-10 text-green-600"></i>
           </div>
-          <h3 class="text-xl font-semibold text-accent-800 mb-3">أمان مضمون</h3>
-          <p class="text-accent-600">معدات حديثة وفريق مدرب لضمان سلامة مركبتكم</p>
+          <h3 class="text-2xl font-bold text-accent-800 mb-4">أمان مضمون</h3>
+          <p class="text-accent-600 mb-6 leading-relaxed">
+            معدات حديثة وفريق مدرب ومؤهل يضمن سلامة مركبتك طوال عملية النقل والتعامل
+          </p>
+          <ul class="text-sm text-accent-700 space-y-2">
+            <li class="flex items-center justify-center space-x-reverse space-x-2">
+              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+              <span>معدات متطورة</span>
+            </li>
+            <li class="flex items-center justify-center space-x-reverse space-x-2">
+              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+              <span>فريق محترف</span>
+            </li>
+            <li class="flex items-center justify-center space-x-reverse space-x-2">
+              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+              <span>تأمين شامل</span>
+            </li>
+          </ul>
         </div>
+      </div>
+      
+      <!-- Call to action -->
+      <div class="text-center">
+        <a 
+          href="/services"
+          class="inline-flex items-center px-8 py-4 bg-primary-600 text-white rounded-xl font-bold text-lg hover:bg-primary-700 transition-colors duration-200 shadow-lg"
+        >
+          اعرف المزيد عن خدماتنا
+          <i data-feather="arrow-left" class="h-5 w-5 mr-2"></i>
+        </a>
       </div>
     </div>
   </section>

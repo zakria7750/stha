@@ -1,0 +1,32 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+public/
+
+# Environment variables
+.env
+.env.* 
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# macOS system files (›Ì Õ«· «” Œœ«„ „·›«  „‰ Mac ”«»ﬁ«)
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Astro / Vite cache
+.astro/
+.cache/

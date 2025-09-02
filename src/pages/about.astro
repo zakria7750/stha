@@ -9,90 +9,188 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <div class="max-w-4xl mx-auto px-4 py-12">
     
     <!-- Page Header -->
-    <div class="text-center mb-12">
-      <h1 class="text-4xl font-bold text-accent-800 mb-4">من نحن</h1>
-      <p class="text-xl text-accent-600">تعرف على قصتنا وخبرتنا في خدمة نقل المركبات</p>
+    <div class="text-center mb-16">
+      <h1 class="text-5xl font-bold text-accent-800 mb-6">من نحن</h1>
+      <p class="text-2xl text-accent-600 max-w-4xl mx-auto leading-relaxed">
+        <strong class="text-primary-600">15 سنة من الخبرة</strong> في خدمة أهالي جدة<br>
+        نحن أكثر من مجرد خدمة سطحة - نحن شركاؤكم في كل رحلة
+      </p>
     </div>
 
     <!-- About Content -->
     <div class="prose prose-lg max-w-none text-right" dir="rtl">
       
-      <section class="mb-12">
-        <h2 class="text-2xl font-bold text-accent-800 mb-6">نبذة عن سطحة جدة الحوباني</h2>
-        <p class="text-accent-700 leading-relaxed mb-6">
-          تأسست سطحة جدة الحوباني بهدف تقديم خدمة نقل المركبات الأكثر احترافية وأماناً في مدينة جدة والمناطق المجاورة. 
-          منذ انطلاقتنا، كرسنا جهودنا لبناء سمعة موثوقة تقوم على الجودة والسرعة في الخدمة.
-        </p>
-        <p class="text-accent-700 leading-relaxed">
-          نحن نفهم أن تعطل المركبة يمكن أن يكون تجربة مجهدة، لذلك نعمل على تقديم حلول سريعة وموثوقة 
-          لضمان راحة عملائنا ووصولهم إلى وجهتهم بأمان.
-        </p>
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-accent-800 mb-8">قصتنا مع جدة</h2>
+        <div class="bg-gradient-to-r from-primary-50 to-secondary-50 p-8 rounded-2xl mb-8">
+          <p class="text-lg text-accent-700 leading-relaxed mb-6">
+            منذ <strong class="text-primary-600">عام 2009</strong>، بدأنا رحلتنا كفريق صغير يحلم بتقديم خدمة سطحة مختلفة في جدة. 
+            كان هدفنا بسيطاً لكنه مهم: <strong class="text-secondary-600">الوصول السريع، والتعامل الأمين، والسعر العادل</strong>.
+          </p>
+          <p class="text-lg text-accent-700 leading-relaxed mb-6">
+            اليوم، بعد أكثر من <strong class="text-primary-600">15 عاماً من الخدمة</strong>، أصبحنا جزءاً من يوميات أهالي جدة. 
+            خدمنا أكثر من <strong class="text-green-600">50,000 عميل</strong>، وأنقذنا آلاف المركبات، وبنينا علاقات ثقة مع عائلات وشركات في كل حي من أحياء جدة.
+          </p>
+          <blockquote class="border-r-4 border-primary-600 pr-6 py-4 bg-white rounded-lg">
+            <p class="text-xl text-accent-800 italic font-medium">
+              "نحن لا ننقل مركبات فقط، بل ننقل قلق عملائنا إلى راحة بال، وننقل مشاكلهم إلى حلول سريعة وموثوقة"
+            </p>
+            <footer class="text-primary-600 font-semibold mt-2">- فلسفتنا في العمل</footer>
+          </blockquote>
+        </div>
       </section>
 
-      <section class="mb-12">
-        <h2 class="text-2xl font-bold text-accent-800 mb-6">رؤيتنا ورسالتنا</h2>
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-accent-800 mb-10">رؤيتنا ورسالتنا</h2>
         
-        <div class="grid md:grid-cols-2 gap-8">
-          <div class="bg-primary-50 p-6 rounded-lg">
-            <h3 class="text-xl font-semibold text-primary-800 mb-4">رؤيتنا</h3>
-            <p class="text-accent-700">
-              أن نكون الخيار الأول لخدمات نقل المركبات في المنطقة الغربية، 
-              ونقدم خدمة تتميز بالجودة والاحترافية والسرعة.
+        <div class="grid lg:grid-cols-2 gap-10">
+          <div class="bg-gradient-to-br from-primary-50 to-primary-100 p-8 rounded-2xl border border-primary-200 hover:shadow-xl transition-shadow duration-300">
+            <div class="flex items-center mb-6">
+              <div class="bg-primary-600 rounded-full p-3 ml-4">
+                <i data-feather="eye" class="h-8 w-8 text-white"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-primary-800">رؤيتنا</h3>
+            </div>
+            <p class="text-lg text-accent-700 leading-relaxed mb-4">
+              <strong class="text-primary-700">نحلم بجدة بدون توقف</strong> - مدينة تتحرك فيها المركبات بأمان وثقة، 
+              حيث كل عطل مؤقت وكل مشكلة لها حل سريع.
+            </p>
+            <p class="text-accent-600">
+              نريد أن نكون السبب في عدم تأخر أي شخص عن موعد مهم، وعدم قضاء أي عائلة ليلة قلقة بسبب سيارة معطلة.
             </p>
           </div>
           
-          <div class="bg-secondary-50 p-6 rounded-lg">
-            <h3 class="text-xl font-semibold text-secondary-800 mb-4">رسالتنا</h3>
-            <p class="text-accent-700">
-              تقديم خدمة نقل المركبات بأعلى معايير الأمان والجودة، 
-              مع الاستجابة السريعة لاحتياجات عملائنا على مدار الساعة.
+          <div class="bg-gradient-to-br from-secondary-50 to-secondary-100 p-8 rounded-2xl border border-secondary-200 hover:shadow-xl transition-shadow duration-300">
+            <div class="flex items-center mb-6">
+              <div class="bg-secondary-600 rounded-full p-3 ml-4">
+                <i data-feather="heart" class="h-8 w-8 text-white"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-secondary-800">رسالتنا</h3>
+            </div>
+            <p class="text-lg text-accent-700 leading-relaxed mb-4">
+              <strong class="text-secondary-700">خدمة من القلب للقلب</strong> - نعامل كل مركبة وكأنها ملكنا، 
+              وكل عميل وكأنه من الأهل والأصدقاء.
+            </p>
+            <p class="text-accent-600">
+              نلتزم بالوصول السريع، والتعامل الأمين، والسعر العادل، والحل النهائي لكل مشكلة.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="mb-12">
-        <h2 class="text-2xl font-bold text-accent-800 mb-6">ما يميزنا</h2>
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-accent-800 mb-10">لماذا نحن مختلفون؟</h2>
         
-        <div class="grid sm:grid-cols-2 gap-6">
-          <div class="flex items-start space-x-reverse space-x-4">
-            <div class="bg-green-100 rounded-full p-2 flex-shrink-0">
-              <i data-feather="award" class="h-6 w-6 text-green-600"></i>
+        <div class="grid lg:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <div class="flex items-start space-x-reverse space-x-6 p-6 bg-gradient-to-r from-green-50 to-green-100 rounded-xl hover:shadow-lg transition-shadow duration-300">
+              <div class="bg-green-600 rounded-full p-3 flex-shrink-0">
+                <i data-feather="award" class="h-6 w-6 text-white"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-accent-800 mb-3">خبرة حقيقية</h4>
+                <p class="text-accent-700 leading-relaxed">
+                  أكثر من <strong class="text-green-600">15 عام تجربة</strong> مع كل أنواع المركبات والحالات - من السيارة الصغيرة للشاحنة الكبيرة، 
+                  من العطل البسيط للحالات المعقدة.
+                </p>
+              </div>
             </div>
-            <div>
-              <h4 class="font-semibold text-accent-800 mb-2">خبرة متخصصة</h4>
-              <p class="text-accent-600">فريق مدرب ومؤهل للتعامل مع جميع أنواع المركبات</p>
-            </div>
-          </div>
-          
-          <div class="flex items-start space-x-reverse space-x-4">
-            <div class="bg-blue-100 rounded-full p-2 flex-shrink-0">
-              <i data-feather="shield" class="h-6 w-6 text-blue-600"></i>
-            </div>
-            <div>
-              <h4 class="font-semibold text-accent-800 mb-2">معدات حديثة</h4>
-              <p class="text-accent-600">سطحات مجهزة بأحدث التقنيات لضمان سلامة مركبتكم</p>
-            </div>
-          </div>
-          
-          <div class="flex items-start space-x-reverse space-x-4">
-            <div class="bg-orange-100 rounded-full p-2 flex-shrink-0">
-              <i data-feather="clock" class="h-6 w-6 text-orange-600"></i>
-            </div>
-            <div>
-              <h4 class="font-semibold text-accent-800 mb-2">استجابة سريعة</h4>
-              <p class="text-accent-600">وصول سريع إلى موقعكم في أقل وقت ممكن</p>
+            
+            <div class="flex items-start space-x-reverse space-x-6 p-6 bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl hover:shadow-lg transition-shadow duration-300">
+              <div class="bg-blue-600 rounded-full p-3 flex-shrink-0">
+                <i data-feather="shield" class="h-6 w-6 text-white"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-accent-800 mb-3">معدات متطورة</h4>
+                <p class="text-accent-700 leading-relaxed">
+                  أسطول من <strong class="text-blue-600">12 سطحة حديثة</strong> مجهزة بأحدث تقنيات الرفع الآمن، 
+                  مع أنظمة تثبيت متقدمة لضمان عدم تضرر مركبتك أثناء النقل.
+                </p>
+              </div>
             </div>
           </div>
           
-          <div class="flex items-start space-x-reverse space-x-4">
-            <div class="bg-purple-100 rounded-full p-2 flex-shrink-0">
-              <i data-feather="dollar-sign" class="h-6 w-6 text-purple-600"></i>
+          <div class="space-y-6">
+            <div class="flex items-start space-x-reverse space-x-6 p-6 bg-gradient-to-r from-orange-50 to-orange-100 rounded-xl hover:shadow-lg transition-shadow duration-300">
+              <div class="bg-orange-600 rounded-full p-3 flex-shrink-0">
+                <i data-feather="clock" class="h-6 w-6 text-white"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-accent-800 mb-3">سرعة الاستجابة</h4>
+                <p class="text-accent-700 leading-relaxed">
+                  معدل وصول <strong class="text-orange-600">15 دقيقة</strong> في المتوسط داخل جدة. 
+                  فريق منتشر في أحياء مختلفة لضمان التغطية الكاملة والوصول السريع.
+                </p>
+              </div>
             </div>
+            
+            <div class="flex items-start space-x-reverse space-x-6 p-6 bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl hover:shadow-lg transition-shadow duration-300">
+              <div class="bg-purple-600 rounded-full p-3 flex-shrink-0">
+                <i data-feather="heart" class="h-6 w-6 text-white"></i>
+              </div>
+              <div>
+                <h4 class="text-xl font-bold text-accent-800 mb-3">تعامل إنساني</h4>
+                <p class="text-accent-700 leading-relaxed">
+                  نفهم أن تعطل السيارة موقف صعب. لذلك نقدم <strong class="text-purple-600">الدعم النفسي</strong> قبل الدعم التقني، 
+                  ونتعامل مع كل حالة بصبر واهتمام شخصي.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Team & Equipment Section -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold text-accent-800 mb-10">فريقنا ومعداتنا</h2>
+        
+        <div class="bg-gradient-to-br from-accent-50 to-primary-50 p-10 rounded-2xl">
+          <div class="grid lg:grid-cols-2 gap-12">
+            
+            <!-- Team -->
             <div>
-              <h4 class="font-semibold text-accent-800 mb-2">أسعار منافسة</h4>
-              <p class="text-accent-600">خدمة عالية الجودة بأسعار عادلة ومعقولة</p>
+              <h3 class="text-2xl font-bold text-accent-800 mb-6 flex items-center">
+                <i data-feather="users" class="h-6 w-6 text-primary-600 ml-2"></i>
+                فريق العمل
+              </h3>
+              <div class="space-y-4">
+                <div class="bg-white p-6 rounded-xl border border-accent-200">
+                  <h4 class="font-bold text-primary-800 mb-2">سائقو السطحات</h4>
+                  <p class="text-accent-700">25 سائق محترف مدرب على أحدث تقنيات النقل الآمن</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-accent-200">
+                  <h4 class="font-bold text-secondary-800 mb-2">فريق خدمة العملاء</h4>
+                  <p class="text-accent-700">مركز اتصال متاح 24/7 مع فريق يتحدث العربية والإنجليزية</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-accent-200">
+                  <h4 class="font-bold text-green-800 mb-2">فنيو الصيانة</h4>
+                  <p class="text-accent-700">فريق صيانة متخصص لضمان جاهزية المعدات دائماً</p>
+                </div>
+              </div>
             </div>
+            
+            <!-- Equipment -->
+            <div>
+              <h3 class="text-2xl font-bold text-accent-800 mb-6 flex items-center">
+                <i data-feather="truck" class="h-6 w-6 text-primary-600 ml-2"></i>
+                الأسطول والمعدات
+              </h3>
+              <div class="space-y-4">
+                <div class="bg-white p-6 rounded-xl border border-accent-200">
+                  <h4 class="font-bold text-primary-800 mb-2">12 سطحة حديثة</h4>
+                  <p class="text-accent-700">أحجام مختلفة لتناسب جميع أنواع المركبات</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-accent-200">
+                  <h4 class="font-bold text-secondary-800 mb-2">أنظمة تثبيت متقدمة</h4>
+                  <p class="text-accent-700">حبال وأحزمة عالية الجودة لضمان عدم الانزلاق</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-accent-200">
+                  <h4 class="font-bold text-green-800 mb-2">تقنيات الرفع الآمن</h4>
+                  <p class="text-accent-700">مكائن رفع هيدروليكية لحماية مركبتك من أي ضرر</p>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
