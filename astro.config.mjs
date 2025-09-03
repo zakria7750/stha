@@ -21,6 +21,9 @@ export default defineConfig({
     },
     build: {
       cssCodeSplit: false
+    },
+    define: {
+      __REPLIT_ENV__: true
     }
   }
 });
