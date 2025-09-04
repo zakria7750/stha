@@ -6,36 +6,54 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   title="خدماتنا"
   description="تعرف على جميع خدمات سطحة جدة أبو فهد - نقل السيارات، الشاحنات، الدراجات النارية، وخدمات الطوارئ على مدار الساعة في جدة."
 >
-  <div class="max-w-6xl mx-auto px-4 py-12">
+  <!-- Hero Section -->
+  <section class="relative h-96 md:h-[500px] flex items-center justify-center overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 w-full h-full">
+      <img 
+        src="/hero-services.png" 
+        alt="خدمات سطحة جدة أبو فهد الشاملة" 
+        class="w-full h-full object-cover"
+      >
+      <!-- Dark overlay for better text readability -->
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
+    </div>
     
-    <!-- Page Header -->
-    <div class="text-center mb-16">
-      <h1 class="text-5xl font-bold text-accent-800 mb-6">خدماتنا المتخصصة</h1>
-      <p class="text-2xl text-accent-600 max-w-4xl mx-auto leading-relaxed mb-8">
-        <strong class="text-primary-600">حلول شاملة لكل احتياجاتكم</strong> في نقل المركبات داخل جدة وخارجها<br>
-        من العطل البسيط إلى النقل بين المدن - نحن معكم في كل خطوة
+    <!-- Content -->
+    <div class="relative z-10 max-w-6xl mx-auto px-4 text-center text-white">
+      <span class="inline-block bg-secondary-500/90 backdrop-blur-sm text-white px-6 py-3 rounded-full text-sm font-medium mb-6 shadow-lg">
+        <i data-feather="settings" class="h-4 w-4 inline ml-2"></i>
+        خدمات متكاملة ومتخصصة
+      </span>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-2xl">خدماتنا المتخصصة</h1>
+      <p class="text-xl md:text-2xl leading-relaxed mb-8 drop-shadow-lg">
+        <strong class="text-secondary-300">حلول شاملة لكل احتياجاتكم</strong> في نقل المركبات داخل جدة وخارجها<br>
+        <span class="text-lg mt-2 block">من العطل البسيط إلى النقل بين المدن - نحن معكم في كل خطوة</span>
       </p>
       
-      <!-- Quick stats -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-8">
-        <div class="text-center p-4 bg-primary-50 rounded-xl">
-          <div class="text-2xl font-bold text-primary-600">6</div>
-          <div class="text-sm text-accent-600">خدمات رئيسية</div>
+      <!-- Quick stats with glass effect -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+        <div class="text-center bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+          <div class="text-2xl font-bold text-primary-300">6</div>
+          <div class="text-white/90 text-sm">خدمات رئيسية</div>
         </div>
-        <div class="text-center p-4 bg-secondary-50 rounded-xl">
-          <div class="text-2xl font-bold text-secondary-600">24/7</div>
-          <div class="text-sm text-accent-600">متاح دائماً</div>
+        <div class="text-center bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+          <div class="text-2xl font-bold text-secondary-300">24/7</div>
+          <div class="text-white/90 text-sm">متاح دائماً</div>
         </div>
-        <div class="text-center p-4 bg-green-50 rounded-xl">
-          <div class="text-2xl font-bold text-green-600">15د</div>
-          <div class="text-sm text-accent-600">وقت الوصول</div>
+        <div class="text-center bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+          <div class="text-2xl font-bold text-green-300">15د</div>
+          <div class="text-white/90 text-sm">وقت الوصول</div>
         </div>
-        <div class="text-center p-4 bg-purple-50 rounded-xl">
-          <div class="text-2xl font-bold text-purple-600">جدة+</div>
-          <div class="text-sm text-accent-600">وضواحيها</div>
+        <div class="text-center bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
+          <div class="text-2xl font-bold text-purple-300">جدة+</div>
+          <div class="text-white/90 text-sm">وضواحيها</div>
         </div>
       </div>
     </div>
+  </section>
+
+  <div class="max-w-6xl mx-auto px-4 py-12">
 
     <!-- Main Services Section -->
     <section class="mb-20">

@@ -6,13 +6,31 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   title="تواصل معنا"
   description="تواصل مع سطحة جدة أبو فهد - اتصل بنا هاتفياً أو عبر واتساب للحصول على خدمة سطحة سريعة وموثوقة في جدة على مدار الساعة."
 >
-  <div class="max-w-6xl mx-auto px-4 py-12">
-    
-    <!-- Page Header -->
-    <div class="text-center mb-12">
-      <h1 class="text-4xl font-bold text-accent-800 mb-4">تواصل معنا</h1>
-      <p class="text-xl text-accent-600">نحن هنا لخدمتكم على مدار الساعة</p>
+  <!-- Hero Section -->
+  <section class="relative h-80 md:h-96 flex items-center justify-center overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 w-full h-full">
+      <img 
+        src="/hero-contact.png" 
+        alt="تواصل مع سطحة جدة أبو فهد" 
+        class="w-full h-full object-cover"
+      >
+      <!-- Dark overlay for better text readability -->
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
     </div>
+    
+    <!-- Content -->
+    <div class="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
+      <span class="inline-block bg-green-500/90 backdrop-blur-sm text-white px-6 py-3 rounded-full text-sm font-medium mb-6 shadow-lg">
+        <i data-feather="phone" class="h-4 w-4 inline ml-2"></i>
+        متوفرون على مدار الساعة
+      </span>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight drop-shadow-2xl">تواصل معنا</h1>
+      <p class="text-xl md:text-2xl leading-relaxed drop-shadow-lg">نحن هنا لخدمتكم على مدار الساعة</p>
+    </div>
+  </section>
+
+  <div class="max-w-6xl mx-auto px-4 py-12">
 
     <div class="grid lg:grid-cols-2 gap-12">
       
