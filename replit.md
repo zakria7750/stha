@@ -1,6 +1,6 @@
 # Overview
 
-This is an Astro-based static site generator project configured with Tailwind CSS for styling. The project appears to be for a flatbed trucking company website (jeddah-alhawbani-flatbed.com) based on the robots.txt sitemap reference. The architecture follows Astro's modern static site generation approach with component-based development and build-time optimization.
+This is an Astro-based static site generator project configured with Tailwind CSS for styling. The project appears to be for a flatbed trucking company website (jeddah-abufahd-flatbed.com) based on the robots.txt sitemap reference. The architecture follows Astro's modern static site generation approach with component-based development and build-time optimization.
 
 # User Preferences
 
@@ -56,5 +56,5 @@ Preferred communication style: Simple, everyday language.
 - **import-meta-resolve**: Module resolution utilities
 
 ## Deployment Target
-- **Static Hosting**: Optimized for CDN deployment (referenced domain: jeddah-alhawbani-flatbed.com)
+- **Static Hosting**: Optimized for CDN deployment (referenced domain: jeddah-abufahd-flatbed.com)
 - **SEO Ready**: Configured with robots.txt and sitemap for search engine optimization

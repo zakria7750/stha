@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://jeddah-alhawbani-flatbed.com/sitemap.xml
+Sitemap: https://jeddah-abufahd-flatbed.com/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 1

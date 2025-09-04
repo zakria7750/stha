@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://jeddah-alhawbani-flatbed.com',
+  site: 'https://jeddah-abufahd-flatbed.com',
   output: 'static',
   server: {
     host: '0.0.0.0',
