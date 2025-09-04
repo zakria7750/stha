@@ -8,10 +8,10 @@ export interface Props {
 
 const { title, description, image, canonical } = Astro.props;
 
-const defaultDescription = 'خدمة سطحة جدة الحوباني - نقل المركبات والشاحنات بأمان وسرعة في جدة والمناطق المجاورة. خدمة 24 ساعة مع فريق محترف ومعدات حديثة.';
+const defaultDescription = 'خدمة سطحة جدة أبو فهد - نقل المركبات والشاحنات بأمان وسرعة في جدة والمناطق المجاورة. خدمة 24 ساعة مع فريق محترف ومعدات حديثة.';
 const defaultImage = '/og-image.jpg';
 
-const siteTitle = 'سطحة جدة الحوباني';
+const siteTitle = 'سطحة جدة أبو فهد';
 const fullTitle = title === siteTitle ? title : `${title} | ${siteTitle}`;
 
 const canonicalURL = canonical || Astro.url.href;
@@ -23,8 +23,8 @@ const desc = description || defaultDescription;
 <title>{fullTitle}</title>
 <meta name="title" content={fullTitle} />
 <meta name="description" content={desc} />
-<meta name="keywords" content="سطحة جدة, نقل مركبات, خدمة سطحة, الحوباني, نقل شاحنات, خدمة طوارئ, سطحة 24 ساعة" />
-<meta name="author" content="سطحة جدة الحوباني" />
+<meta name="keywords" content="سطحة جدة, نقل مركبات, خدمة سطحة, أبو فهد, نقل شاحنات, خدمة طوارئ, سطحة 24 ساعة" />
+<meta name="author" content="سطحة جدة أبو فهد" />
 <meta name="robots" content="index, follow" />
 
 <!-- Canonical URL -->
@@ -57,7 +57,7 @@ const desc = description || defaultDescription;
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "سطحة جدة الحوباني",
+    "name": "سطحة جدة أبو فهد",
     "description": "خدمة سطحة ونقل المركبات في جدة",
     "url": "https://jeddah-alhawbani-flatbed.com",
     "address": {
