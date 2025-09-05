@@ -385,6 +385,156 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
+  <!-- Coverage & CTA -->
+  <section class="py-20 px-4 bg-gradient-to-br from-primary-50 via-white to-secondary-50">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-accent-800 mb-6">تغطية شاملة لجميع أحياء جدة</h2>
+        <p class="text-xl text-accent-600 max-w-4xl mx-auto">
+          نصل إليك في أي مكان بجدة وضواحيها خلال دقائق معدودة • خدمة سريعة وموثوقة على مدار الساعة
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Map Section -->
+        <div class="relative">
+          <div class="bg-white rounded-3xl shadow-2xl p-8 border border-accent-100">
+            <h3 class="text-2xl font-bold text-accent-800 mb-6 text-center">موقعنا في جدة</h3>
+            <div class="relative h-96 rounded-2xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.9752398925034!2d39.156782!3d21.489222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b8fcab!2z2KzYr9ip2Iwg2KfZhNmF2YXZhNmD2Kkg2KfZhNi52LHYqNmK2Kkg2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2ssa!4v1703123456789!5m2!1sar!2ssa"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="rounded-2xl"
+              ></iframe>
+            </div>
+            <div class="mt-6 text-center">
+              <p class="text-accent-600 text-sm">
+                <i data-feather="map-pin" class="h-4 w-4 inline ml-1"></i>
+                نخدم جميع أحياء جدة والمناطق المجاورة
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coverage Info & CTA -->
+        <div class="space-y-8">
+          <!-- Coverage Areas -->
+          <div class="bg-white rounded-3xl shadow-xl p-8 border border-accent-100">
+            <h3 class="text-2xl font-bold text-accent-800 mb-6">
+              <i data-feather="map" class="h-6 w-6 inline ml-2 text-primary-600"></i>
+              نطاق تغطيتنا
+            </h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="space-y-3">
+                <div class="flex items-center space-x-reverse space-x-2">
+                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
+                  <span class="text-accent-700">وسط جدة</span>
+                </div>
+                <div class="flex items-center space-x-reverse space-x-2">
+                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
+                  <span class="text-accent-700">شمال جدة</span>
+                </div>
+                <div class="flex items-center space-x-reverse space-x-2">
+                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
+                  <span class="text-accent-700">جنوب جدة</span>
+                </div>
+                <div class="flex items-center space-x-reverse space-x-2">
+                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
+                  <span class="text-accent-700">شرق جدة</span>
+                </div>
+              </div>
+              <div class="space-y-3">
+                <div class="flex items-center space-x-reverse space-x-2">
+                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
+                  <span class="text-accent-700">الكورنيش</span>
+                </div>
+                <div class="flex items-center space-x-reverse space-x-2">
+                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
+                  <span class="text-accent-700">أحياء راقية</span>
+                </div>
+                <div class="flex items-center space-x-reverse space-x-2">
+                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
+                  <span class="text-accent-700">المناطق الصناعية</span>
+                </div>
+                <div class="flex items-center space-x-reverse space-x-2">
+                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
+                  <span class="text-accent-700">الطرق السريعة</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Response Time -->
+          <div class="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-3xl p-8 text-white">
+            <div class="text-center">
+              <div class="mb-4">
+                <i data-feather="clock" class="h-12 w-12 mx-auto text-white"></i>
+              </div>
+              <h3 class="text-3xl font-bold mb-2">15 دقيقة</h3>
+              <p class="text-xl opacity-90">متوسط وقت الوصول</p>
+              <p class="text-sm opacity-75 mt-2">في جميع أنحاء جدة</p>
+            </div>
+          </div>
+
+          <!-- Emergency CTA -->
+          <div class="bg-red-500 rounded-3xl p-8 text-white text-center">
+            <h3 class="text-2xl font-bold mb-4">
+              <i data-feather="alert-triangle" class="h-6 w-6 inline ml-2"></i>
+              حالة طوارئ؟
+            </h3>
+            <p class="mb-6 text-red-100">نحن جاهزون للوصول إليك فوراً</p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a 
+                href="tel:+966551606144"
+                class="flex-1 bg-white text-red-600 py-4 px-6 rounded-2xl font-bold text-lg hover:bg-red-50 transition-all duration-300 transform hover:scale-105"
+              >
+                <i data-feather="phone-call" class="h-6 w-6 inline ml-2"></i>
+                اتصال طوارئ
+              </a>
+              <a 
+                href="https://wa.me/966551606144?text=طوارئ - أحتاج مساعدة فورية"
+                target="_blank"
+                class="flex-1 bg-green-500 text-white py-4 px-6 rounded-2xl font-bold text-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-105"
+              >
+                <svg class="h-6 w-6 inline ml-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                </svg>
+                واتساب طوارئ
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Statistics -->
+      <div class="mt-16 bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-accent-200">
+        <div class="grid md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="text-4xl font-bold text-primary-600 mb-2">24/7</div>
+            <p class="text-accent-600 font-medium">خدمة متواصلة</p>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-secondary-600 mb-2">15</div>
+            <p class="text-accent-600 font-medium">دقيقة وصول</p>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-green-600 mb-2">100%</div>
+            <p class="text-accent-600 font-medium">نسبة الاستجابة</p>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-purple-600 mb-2">جدة</div>
+            <p class="text-accent-600 font-medium">تغطية كاملة</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Why Choose Us -->
   <section class="py-16 px-4 bg-accent-50">
     <div class="max-w-4xl mx-auto text-center">
