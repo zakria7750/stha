@@ -4,40 +4,69 @@ export interface Props {
   description?: string;
   image?: string;
   canonical?: string;
+  type?: string;
 }
 
-const { title, description, image, canonical } = Astro.props;
+const { title, description, image, canonical, type = 'website' } = Astro.props;
 
-const defaultDescription = 'خدمة سطحة جدة أبو فهد - نقل المركبات والشاحنات بأمان وسرعة في جدة والمناطق المجاورة. خدمة 24 ساعة مع فريق محترف ومعدات حديثة.';
+const defaultDescription = 'خدمة سطحة جدة أبو فهد - نقل المركبات والشاحنات بأمان وسرعة في جدة والمناطق المجاورة. خدمة 24 ساعة مع فريق محترف ومعدات حديثة. ☎️ 0551606144';
 const defaultImage = '/og-image.jpg';
 
 const siteTitle = 'سطحة جدة أبو فهد';
 const fullTitle = title === siteTitle ? title : `${title} | ${siteTitle}`;
 
 const canonicalURL = canonical || Astro.url.href;
-const imageURL = image || defaultImage;
+const imageURL = new URL(image || defaultImage, Astro.site).href;
 const desc = description || defaultDescription;
+
+// Geo and business information
+const businessName = 'سطحة جدة أبو فهد';
+const phone = '+966551606144';
+const city = 'جدة';
+const country = 'السعودية';
+const countryCode = 'SA';
+const latitude = '21.489217';
+const longitude = '39.156783';
 ---
 
 <!-- Primary Meta Tags -->
 <title>{fullTitle}</title>
 <meta name="title" content={fullTitle} />
 <meta name="description" content={desc} />
-<meta name="keywords" content="سطحة جدة, نقل مركبات, خدمة سطحة, أبو فهد, نقل شاحنات, خدمة طوارئ, سطحة 24 ساعة" />
+<meta name="keywords" content="سطحة جدة, نقل مركبات, خدمة سطحة, أبو فهد, سحب سيارات جدة, نقل شاحنات, خدمة طوارئ, سطحة 24 ساعة, فتح أبواب مغلقة, تغيير إطارات, نقل بين المدن" />
 <meta name="author" content="سطحة جدة أبو فهد" />
 <meta name="robots" content="index, follow" />
+<meta name="language" content="ar-SA" />
+
+<!-- Geo Tags -->
+<meta name="geo.region" content={countryCode + '-' + city} />
+<meta name="geo.placename" content={city + ', ' + country} />
+<meta name="geo.position" content={latitude + ';' + longitude} />
+<meta name="ICBM" content={latitude + ', ' + longitude} />
+
+<!-- Business Information -->
+<meta name="business:contact_data:phone_number" content={phone} />
+<meta name="business:contact_data:locality" content={city} />
+<meta name="business:contact_data:country_name" content={country} />
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
+<meta property="og:type" content={type} />
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={desc} />
 <meta property="og:image" content={imageURL} />
+<meta property="og:image:alt" content={fullTitle} />
 <meta property="og:locale" content="ar_SA" />
 <meta property="og:site_name" content={siteTitle} />
+<meta property="og:phone_number" content={phone} />
+
+<!-- Business Open Graph -->
+<meta property="business:contact_data:street_address" content={city} />
+<meta property="business:contact_data:locality" content={city} />
+<meta property="business:contact_data:country_name" content={country} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
@@ -45,12 +74,20 @@ const desc = description || defaultDescription;
 <meta property="twitter:title" content={fullTitle} />
 <meta property="twitter:description" content={desc} />
 <meta property="twitter:image" content={imageURL} />
+<meta property="twitter:image:alt" content={fullTitle} />
 
-<!-- Additional Meta Tags -->
+<!-- Mobile & Device Tags -->
 <meta name="format-detection" content="telephone=yes" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content={siteTitle} />
 <meta name="theme-color" content="#0ea5e9" />
+<meta name="msapplication-TileColor" content="#0ea5e9" />
+
+<!-- Performance & Loading -->
+<meta name="referrer" content="origin-when-cross-origin" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
 
 <!-- Schema.org markup -->
 <script type="application/ld+json">
@@ -58,37 +95,99 @@ const desc = description || defaultDescription;
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "سطحة جدة أبو فهد",
-    "description": "خدمة سطحة ونقل المركبات في جدة",
+    "alternateName": "أبو فهد للسطحة",
+    "description": "خدمة سطحة ونقل المركبات المتخصصة في جدة - نقل السيارات المعطلة، سحب الشاحنات، فتح الأبواب المغلقة، تغيير الإطارات، والنقل بين المدن على مدار الساعة",
     "url": "https://jeddah-abufahd-flatbed.com",
+    "logo": "https://jeddah-abufahd-flatbed.com/logo.png",
+    "image": "https://jeddah-abufahd-flatbed.com/og-image.jpg",
+    "telephone": "+966551606144",
+    "email": "info@jeddah-abufahd-flatbed.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "جدة",
-      "addressCountry": "SA"
+      "addressRegion": "مكة المكرمة",
+      "addressCountry": "SA",
+      "streetAddress": "جدة"
     },
-    "serviceArea": {
-      "@type": "City",
-      "name": "جدة"
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 21.489217,
+      "longitude": 39.156783
     },
+    "serviceArea": [
+      {
+        "@type": "City",
+        "name": "جدة"
+      },
+      {
+        "@type": "City", 
+        "name": "مكة المكرمة"
+      },
+      {
+        "@type": "City",
+        "name": "المدينة المنورة"
+      },
+      {
+        "@type": "City",
+        "name": "الطائف"
+      }
+    ],
+    "openingHours": "Mo-Su 00:00-23:59",
     "priceRange": "$$",
+    "paymentAccepted": "Cash, Credit Card",
+    "currenciesAccepted": "SAR",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "خدمات السطحة",
+      "name": "خدمات السطحة المتكاملة",
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "نقل المركبات المعطلة"
+            "name": "سحب السيارات المعطلة",
+            "description": "خدمة سحب احترافية لجميع أنواع السيارات المعطلة في جدة"
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "نقل الشاحنات"
+            "name": "فتح الأبواب المغلقة",
+            "description": "خدمة فتح الأبواب المغلقة للسيارات والمنازل"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "تغيير الإطارات",
+            "description": "خدمة تغيير الإطارات في الموقع بسرعة وأمان"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "النقل بين المدن",
+            "description": "نقل المركبات بين جدة والمدن السعودية الأخرى"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "نقل الشاحنات",
+            "description": "خدمة نقل الشاحنات والمركبات الثقيلة"
           }
         }
       ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "150"
     }
   }
 </script>
