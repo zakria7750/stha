@@ -1,33 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://jeddah-abufahd-flatbed.com/</loc>
-    <lastmod>2025-08-30</lastmod>
+    <lastmod>2025-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://jeddah-abufahd-flatbed.com/hero-main.png</image:loc>
+      <image:title>سطحة جدة أبو فهد - خدمة سحب المركبات</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://jeddah-abufahd-flatbed.com/about</loc>
-    <lastmod>2025-08-30</lastmod>
+    <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jeddah-abufahd-flatbed.com/hero-about.png</image:loc>
+      <image:title>فريق سطحة جدة أبو فهد المحترف</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://jeddah-abufahd-flatbed.com/services</loc>
-    <lastmod>2025-08-30</lastmod>
+    <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://jeddah-abufahd-flatbed.com/hero-services.png</image:loc>
+      <image:title>خدمات سطحة جدة أبو فهد الشاملة</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://jeddah-abufahd-flatbed.com/blog</loc>
-    <lastmod>2025-08-30</lastmod>
+    <lastmod>2025-09-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://jeddah-abufahd-flatbed.com/hero-blog.png</image:loc>
+      <image:title>مدونة سطحة جدة أبو فهد للنصائح والمعلومات</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://jeddah-abufahd-flatbed.com/contact</loc>
-    <lastmod>2025-08-30</lastmod>
+    <lastmod>2025-09-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://jeddah-abufahd-flatbed.com/hero-contact.png</image:loc>
+      <image:title>تواصل مع سطحة جدة أبو فهد</image:title>
+    </image:image>
   </url>
 </urlset>
