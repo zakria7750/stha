@@ -24,20 +24,11 @@ const { title, description, image, canonical } = Astro.props;
       image={image}
       canonical={canonical}
     />
-    <!-- Preconnect to improve performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://unpkg.com">
-    
-    <!-- Optimized font loading -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Icons and Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/favicon.ico">
-    
-    <!-- Deferred script loading for better performance -->
-    <script src="https://unpkg.com/feather-icons" defer></script>
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body class="font-arabic bg-white text-accent-900 antialiased">
     <Header />

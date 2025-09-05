@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import OptimizedImage from '../components/OptimizedImage.astro';
 ---
 
 <BaseLayout 
@@ -11,14 +10,11 @@ import OptimizedImage from '../components/OptimizedImage.astro';
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
     <!-- Background Image -->
     <div class="absolute inset-0 w-full h-full">
-      <OptimizedImage 
+      <img 
         src="/hero-main.png" 
         alt="سطحة جدة أبو فهد - خدمة نقل المركبات المحترفة" 
         class="w-full h-full object-cover"
-        loading="eager"
-        width={1920}
-        height={1080}
-      />
+      >
       <!-- Dark overlay for better text readability -->
       <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
     </div>
@@ -188,655 +184,6 @@ import OptimizedImage from '../components/OptimizedImage.astro';
     </div>
   </section>
 
-  <!-- Services Cards with Images -->
-  <section class="py-20 px-4 bg-gradient-to-b from-white to-accent-50">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-accent-800 mb-6">خدماتنا المصورة</h2>
-        <p class="text-xl text-accent-600 max-w-3xl mx-auto">
-          نقدم مجموعة شاملة من الخدمات المتخصصة لحل جميع مشاكل مركبتك في أي وقت ومكان
-        </p>
-      </div>
-      
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- سحب السيارات المعطلة -->
-        <div class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-accent-100 hover:border-primary-300 transform hover:-translate-y-2">
-          <div class="relative h-64 overflow-hidden">
-            <img 
-              src="/attached_assets/generated_images/Professional_towing_team_facility_d1390c74.png" 
-              alt="سحب السيارات المعطلة - فريق محترف" 
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            >
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div class="absolute top-4 right-4 bg-primary-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-              🚗 خدمة أساسية
-            </div>
-          </div>
-          <div class="p-8">
-            <h3 class="text-2xl font-bold text-accent-800 mb-4 group-hover:text-primary-600 transition-colors duration-300">
-              سحب السيارات المعطلة
-            </h3>
-            <p class="text-accent-600 mb-6 leading-relaxed">
-              خدمة سحب احترافية لجميع أنواع السيارات المعطلة. فريق مدرب ومعدات حديثة لضمان سلامة مركبتك أثناء عملية السحب والنقل.
-            </p>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-center space-x-reverse space-x-3">
-                <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                <span class="text-accent-700">سحب آمن لجميع أنواع السيارات</span>
-              </li>
-              <li class="flex items-center space-x-reverse space-x-3">
-                <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                <span class="text-accent-700">فريق متخصص ومدرب</span>
-              </li>
-              <li class="flex items-center space-x-reverse space-x-3">
-                <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                <span class="text-accent-700">معدات حديثة ومتطورة</span>
-              </li>
-            </ul>
-            <div class="flex space-x-reverse space-x-3">
-              <a 
-                href="tel:+966551606144"
-                class="flex-1 bg-primary-600 text-white text-center py-3 rounded-xl font-semibold hover:bg-primary-700 transition-colors duration-300"
-              >
-                اطلب الآن
-              </a>
-              <a 
-                href="https://wa.me/966551606144?text=أحتاج خدمة سحب سيارة معطلة"
-                target="_blank"
-                class="flex-1 bg-green-500 text-white text-center py-3 rounded-xl font-semibold hover:bg-green-600 transition-colors duration-300"
-              >
-                واتساب
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- فتح الأبواب المغلقة -->
-        <div class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-accent-100 hover:border-secondary-300 transform hover:-translate-y-2">
-          <div class="relative h-64 overflow-hidden">
-            <img 
-              src="/attached_assets/generated_images/Customer_service_center_communication_c1f4bee6.png" 
-              alt="فتح الأبواب المغلقة - خدمة احترافية" 
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            >
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div class="absolute top-4 right-4 bg-secondary-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-              🔑 خدمة طوارئ
-            </div>
-          </div>
-          <div class="p-8">
-            <h3 class="text-2xl font-bold text-accent-800 mb-4 group-hover:text-secondary-600 transition-colors duration-300">
-              فتح الأبواب المغلقة
-            </h3>
-            <p class="text-accent-600 mb-6 leading-relaxed">
-              خدمة فتح الأبواب المغلقة للسيارات والمنازل والمكاتب. فريق متخصص يصل إليك بسرعة لحل مشكلة الأبواب المغلقة دون أضرار.
-            </p>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-center space-x-reverse space-x-3">
-                <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                <span class="text-accent-700">فتح أبواب السيارات بأمان</span>
-              </li>
-              <li class="flex items-center space-x-reverse space-x-3">
-                <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                <span class="text-accent-700">خدمة سريعة ومضمونة</span>
-              </li>
-              <li class="flex items-center space-x-reverse space-x-3">
-                <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                <span class="text-accent-700">بدون أضرار أو خدوش</span>
-              </li>
-            </ul>
-            <div class="flex space-x-reverse space-x-3">
-              <a 
-                href="tel:+966551606144"
-                class="flex-1 bg-secondary-600 text-white text-center py-3 rounded-xl font-semibold hover:bg-secondary-700 transition-colors duration-300"
-              >
-                اطلب الآن
-              </a>
-              <a 
-                href="https://wa.me/966551606144?text=أحتاج خدمة فتح باب مغلق"
-                target="_blank"
-                class="flex-1 bg-green-500 text-white text-center py-3 rounded-xl font-semibold hover:bg-green-600 transition-colors duration-300"
-              >
-                واتساب
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- تغيير الإطارات -->
-        <div class="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-accent-100 hover:border-green-300 transform hover:-translate-y-2">
-          <div class="relative h-64 overflow-hidden">
-            <img 
-              src="/attached_assets/generated_images/Comprehensive_automotive_services_center_27235135.png" 
-              alt="تغيير الإطارات - خدمة متخصصة" 
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-            >
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-              🛞 خدمة فورية
-            </div>
-          </div>
-          <div class="p-8">
-            <h3 class="text-2xl font-bold text-accent-800 mb-4 group-hover:text-green-600 transition-colors duration-300">
-              تغيير الإطارات
-            </h3>
-            <p class="text-accent-600 mb-6 leading-relaxed">
-              خدمة تغيير الإطارات المثقوبة أو التالفة في الموقع. نصل إليك بالإطار البديل والأدوات اللازمة لإنجاز المهمة بسرعة وأمان.
-            </p>
-            <ul class="space-y-3 mb-6">
-              <li class="flex items-center space-x-reverse space-x-3">
-                <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                <span class="text-accent-700">تغيير فوري في الموقع</span>
-              </li>
-              <li class="flex items-center space-x-reverse space-x-3">
-                <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                <span class="text-accent-700">إطارات عالية الجودة</span>
-              </li>
-              <li class="flex items-center space-x-reverse space-x-3">
-                <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                <span class="text-accent-700">أدوات متخصصة ومعايرة</span>
-              </li>
-            </ul>
-            <div class="flex space-x-reverse space-x-3">
-              <a 
-                href="tel:+966551606144"
-                class="flex-1 bg-green-600 text-white text-center py-3 rounded-xl font-semibold hover:bg-green-700 transition-colors duration-300"
-              >
-                اطلب الآن
-              </a>
-              <a 
-                href="https://wa.me/966551606144?text=أحتاج خدمة تغيير إطار"
-                target="_blank"
-                class="flex-1 bg-green-500 text-white text-center py-3 rounded-xl font-semibold hover:bg-green-600 transition-colors duration-300"
-              >
-                واتساب
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Additional Service Info -->
-      <div class="mt-16 text-center bg-white/70 backdrop-blur-sm rounded-2xl p-8 border border-accent-200">
-        <h3 class="text-2xl font-bold text-accent-800 mb-4">خدمات إضافية متوفرة</h3>
-        <div class="grid md:grid-cols-4 gap-6">
-          <div class="text-center">
-            <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
-              <i data-feather="battery" class="h-8 w-8 text-blue-600"></i>
-            </div>
-            <span class="text-sm font-medium text-accent-700">تشغيل البطارية</span>
-          </div>
-          <div class="text-center">
-            <div class="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
-              <i data-feather="droplet" class="h-8 w-8 text-orange-600"></i>
-            </div>
-            <span class="text-sm font-medium text-accent-700">توصيل وقود</span>
-          </div>
-          <div class="text-center">
-            <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
-              <i data-feather="tool" class="h-8 w-8 text-purple-600"></i>
-            </div>
-            <span class="text-sm font-medium text-accent-700">إصلاح طوارئ</span>
-          </div>
-          <div class="text-center">
-            <div class="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
-              <i data-feather="shield" class="h-8 w-8 text-red-600"></i>
-            </div>
-            <span class="text-sm font-medium text-accent-700">مساعدة طرق</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Coverage & CTA -->
-  <section class="py-20 px-4 bg-gradient-to-br from-primary-50 via-white to-secondary-50">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-accent-800 mb-6">تغطية شاملة لجميع أحياء جدة</h2>
-        <p class="text-xl text-accent-600 max-w-4xl mx-auto">
-          نصل إليك في أي مكان بجدة وضواحيها خلال دقائق معدودة • خدمة سريعة وموثوقة على مدار الساعة
-        </p>
-      </div>
-
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <!-- Map Section -->
-        <div class="relative">
-          <div class="bg-white rounded-3xl shadow-2xl p-8 border border-accent-100">
-            <h3 class="text-2xl font-bold text-accent-800 mb-6 text-center">موقعنا في جدة</h3>
-            <div class="relative h-96 rounded-2xl overflow-hidden shadow-lg">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3710.9752398925034!2d39.156782!3d21.489222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b8fcab!2z2KzYr9ip2Iwg2KfZhNmF2YXZhNmD2Kkg2KfZhNi52LHYqNmK2Kkg2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2ssa!4v1703123456789!5m2!1sar!2ssa"
-                width="100%"
-                height="100%"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                class="rounded-2xl"
-              ></iframe>
-            </div>
-            <div class="mt-6 text-center">
-              <p class="text-accent-600 text-sm">
-                <i data-feather="map-pin" class="h-4 w-4 inline ml-1"></i>
-                نخدم جميع أحياء جدة والمناطق المجاورة
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Coverage Info & CTA -->
-        <div class="space-y-8">
-          <!-- Coverage Areas -->
-          <div class="bg-white rounded-3xl shadow-xl p-8 border border-accent-100">
-            <h3 class="text-2xl font-bold text-accent-800 mb-6">
-              <i data-feather="map" class="h-6 w-6 inline ml-2 text-primary-600"></i>
-              نطاق تغطيتنا
-            </h3>
-            <div class="grid grid-cols-2 gap-4">
-              <div class="space-y-3">
-                <div class="flex items-center space-x-reverse space-x-2">
-                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                  <span class="text-accent-700">وسط جدة</span>
-                </div>
-                <div class="flex items-center space-x-reverse space-x-2">
-                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                  <span class="text-accent-700">شمال جدة</span>
-                </div>
-                <div class="flex items-center space-x-reverse space-x-2">
-                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                  <span class="text-accent-700">جنوب جدة</span>
-                </div>
-                <div class="flex items-center space-x-reverse space-x-2">
-                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                  <span class="text-accent-700">شرق جدة</span>
-                </div>
-              </div>
-              <div class="space-y-3">
-                <div class="flex items-center space-x-reverse space-x-2">
-                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                  <span class="text-accent-700">الكورنيش</span>
-                </div>
-                <div class="flex items-center space-x-reverse space-x-2">
-                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                  <span class="text-accent-700">أحياء راقية</span>
-                </div>
-                <div class="flex items-center space-x-reverse space-x-2">
-                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                  <span class="text-accent-700">المناطق الصناعية</span>
-                </div>
-                <div class="flex items-center space-x-reverse space-x-2">
-                  <i data-feather="check-circle" class="h-5 w-5 text-green-500"></i>
-                  <span class="text-accent-700">الطرق السريعة</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Response Time -->
-          <div class="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-3xl p-8 text-white">
-            <div class="text-center">
-              <div class="mb-4">
-                <i data-feather="clock" class="h-12 w-12 mx-auto text-white"></i>
-              </div>
-              <h3 class="text-3xl font-bold mb-2">15 دقيقة</h3>
-              <p class="text-xl opacity-90">متوسط وقت الوصول</p>
-              <p class="text-sm opacity-75 mt-2">في جميع أنحاء جدة</p>
-            </div>
-          </div>
-
-          <!-- Emergency CTA -->
-          <div class="bg-red-500 rounded-3xl p-8 text-white text-center">
-            <h3 class="text-2xl font-bold mb-4">
-              <i data-feather="alert-triangle" class="h-6 w-6 inline ml-2"></i>
-              حالة طوارئ؟
-            </h3>
-            <p class="mb-6 text-red-100">نحن جاهزون للوصول إليك فوراً</p>
-            <div class="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="tel:+966551606144"
-                class="flex-1 bg-white text-red-600 py-4 px-6 rounded-2xl font-bold text-lg hover:bg-red-50 transition-all duration-300 transform hover:scale-105"
-              >
-                <i data-feather="phone-call" class="h-6 w-6 inline ml-2"></i>
-                اتصال طوارئ
-              </a>
-              <a 
-                href="https://wa.me/966551606144?text=طوارئ - أحتاج مساعدة فورية"
-                target="_blank"
-                class="flex-1 bg-green-500 text-white py-4 px-6 rounded-2xl font-bold text-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-105"
-              >
-                <svg class="h-6 w-6 inline ml-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                </svg>
-                واتساب طوارئ
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Contact Statistics -->
-      <div class="mt-16 bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-accent-200">
-        <div class="grid md:grid-cols-4 gap-8 text-center">
-          <div>
-            <div class="text-4xl font-bold text-primary-600 mb-2">24/7</div>
-            <p class="text-accent-600 font-medium">خدمة متواصلة</p>
-          </div>
-          <div>
-            <div class="text-4xl font-bold text-secondary-600 mb-2">15</div>
-            <p class="text-accent-600 font-medium">دقيقة وصول</p>
-          </div>
-          <div>
-            <div class="text-4xl font-bold text-green-600 mb-2">100%</div>
-            <p class="text-accent-600 font-medium">نسبة الاستجابة</p>
-          </div>
-          <div>
-            <div class="text-4xl font-bold text-purple-600 mb-2">جدة</div>
-            <p class="text-accent-600 font-medium">تغطية كاملة</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Intercity Services -->
-  <section class="py-20 px-4 bg-white">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-accent-800 mb-6">خدمات النقل بين المدن</h2>
-        <p class="text-xl text-accent-600 max-w-4xl mx-auto">
-          نقدم خدمات نقل المركبات بين جدة والمدن السعودية الرئيسية بأسعار تنافسية وخدمة احترافية
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- جدة - مكة -->
-        <div class="group bg-gradient-to-br from-primary-50 to-white rounded-3xl p-8 border-2 border-primary-100 hover:border-primary-300 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-          <div class="text-center">
-            <div class="bg-primary-500 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <img 
-                src="/attached_assets/generated_images/Flatbed_truck_Jeddah_cityscape_78c61ca5.png" 
-                alt="النقل إلى مكة" 
-                class="w-12 h-8 object-cover rounded"
-              >
-            </div>
-            <h3 class="text-2xl font-bold text-accent-800 mb-4 group-hover:text-primary-600 transition-colors duration-300">
-              جدة ← مكة المكرمة
-            </h3>
-            <div class="space-y-4 mb-6">
-              <div class="flex justify-between items-center py-2 border-b border-primary-100">
-                <span class="text-accent-600">المسافة:</span>
-                <span class="font-semibold text-accent-800">80 كم</span>
-              </div>
-              <div class="flex justify-between items-center py-2 border-b border-primary-100">
-                <span class="text-accent-600">وقت الوصول:</span>
-                <span class="font-semibold text-accent-800">1.5 ساعة</span>
-              </div>
-              <div class="flex justify-between items-center py-2">
-                <span class="text-accent-600">السعر من:</span>
-                <span class="font-bold text-2xl text-primary-600">300 ريال</span>
-              </div>
-            </div>
-            <div class="space-y-3">
-              <a 
-                href="tel:+966551606144"
-                class="block w-full bg-primary-600 text-white py-3 rounded-xl font-semibold hover:bg-primary-700 transition-colors duration-300"
-              >
-                احجز الآن
-              </a>
-              <a 
-                href="https://wa.me/966551606144?text=أريد حجز نقل من جدة إلى مكة"
-                target="_blank"
-                class="block w-full bg-green-500 text-white py-3 rounded-xl font-semibold hover:bg-green-600 transition-colors duration-300"
-              >
-                استفسار واتساب
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- جدة - المدينة -->
-        <div class="group bg-gradient-to-br from-secondary-50 to-white rounded-3xl p-8 border-2 border-secondary-100 hover:border-secondary-300 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-          <div class="text-center">
-            <div class="bg-secondary-500 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <i data-feather="navigation" class="h-10 w-10 text-white"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-accent-800 mb-4 group-hover:text-secondary-600 transition-colors duration-300">
-              جدة ← المدينة المنورة
-            </h3>
-            <div class="space-y-4 mb-6">
-              <div class="flex justify-between items-center py-2 border-b border-secondary-100">
-                <span class="text-accent-600">المسافة:</span>
-                <span class="font-semibold text-accent-800">420 كم</span>
-              </div>
-              <div class="flex justify-between items-center py-2 border-b border-secondary-100">
-                <span class="text-accent-600">وقت الوصول:</span>
-                <span class="font-semibold text-accent-800">4.5 ساعة</span>
-              </div>
-              <div class="flex justify-between items-center py-2">
-                <span class="text-accent-600">السعر من:</span>
-                <span class="font-bold text-2xl text-secondary-600">800 ريال</span>
-              </div>
-            </div>
-            <div class="space-y-3">
-              <a 
-                href="tel:+966551606144"
-                class="block w-full bg-secondary-600 text-white py-3 rounded-xl font-semibold hover:bg-secondary-700 transition-colors duration-300"
-              >
-                احجز الآن
-              </a>
-              <a 
-                href="https://wa.me/966551606144?text=أريد حجز نقل من جدة إلى المدينة المنورة"
-                target="_blank"
-                class="block w-full bg-green-500 text-white py-3 rounded-xl font-semibold hover:bg-green-600 transition-colors duration-300"
-              >
-                استفسار واتساب
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- جدة - الرياض -->
-        <div class="group bg-gradient-to-br from-green-50 to-white rounded-3xl p-8 border-2 border-green-100 hover:border-green-300 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-          <div class="text-center">
-            <div class="bg-green-500 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <i data-feather="map-pin" class="h-10 w-10 text-white"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-accent-800 mb-4 group-hover:text-green-600 transition-colors duration-300">
-              جدة ← الرياض
-            </h3>
-            <div class="space-y-4 mb-6">
-              <div class="flex justify-between items-center py-2 border-b border-green-100">
-                <span class="text-accent-600">المسافة:</span>
-                <span class="font-semibold text-accent-800">950 كم</span>
-              </div>
-              <div class="flex justify-between items-center py-2 border-b border-green-100">
-                <span class="text-accent-600">وقت الوصول:</span>
-                <span class="font-semibold text-accent-800">9 ساعات</span>
-              </div>
-              <div class="flex justify-between items-center py-2">
-                <span class="text-accent-600">السعر من:</span>
-                <span class="font-bold text-2xl text-green-600">1500 ريال</span>
-              </div>
-            </div>
-            <div class="space-y-3">
-              <a 
-                href="tel:+966551606144"
-                class="block w-full bg-green-600 text-white py-3 rounded-xl font-semibold hover:bg-green-700 transition-colors duration-300"
-              >
-                احجز الآن
-              </a>
-              <a 
-                href="https://wa.me/966551606144?text=أريد حجز نقل من جدة إلى الرياض"
-                target="_blank"
-                class="block w-full bg-green-500 text-white py-3 rounded-xl font-semibold hover:bg-green-600 transition-colors duration-300"
-              >
-                استفسار واتساب
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- جدة - الطائف -->
-        <div class="group bg-gradient-to-br from-purple-50 to-white rounded-3xl p-8 border-2 border-purple-100 hover:border-purple-300 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-          <div class="text-center">
-            <div class="bg-purple-500 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <i data-feather="mountain" class="h-10 w-10 text-white"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-accent-800 mb-4 group-hover:text-purple-600 transition-colors duration-300">
-              جدة ← الطائف
-            </h3>
-            <div class="space-y-4 mb-6">
-              <div class="flex justify-between items-center py-2 border-b border-purple-100">
-                <span class="text-accent-600">المسافة:</span>
-                <span class="font-semibold text-accent-800">165 كم</span>
-              </div>
-              <div class="flex justify-between items-center py-2 border-b border-purple-100">
-                <span class="text-accent-600">وقت الوصول:</span>
-                <span class="font-semibold text-accent-800">2.5 ساعة</span>
-              </div>
-              <div class="flex justify-between items-center py-2">
-                <span class="text-accent-600">السعر من:</span>
-                <span class="font-bold text-2xl text-purple-600">500 ريال</span>
-              </div>
-            </div>
-            <div class="space-y-3">
-              <a 
-                href="tel:+966551606144"
-                class="block w-full bg-purple-600 text-white py-3 rounded-xl font-semibold hover:bg-purple-700 transition-colors duration-300"
-              >
-                احجز الآن
-              </a>
-              <a 
-                href="https://wa.me/966551606144?text=أريد حجز نقل من جدة إلى الطائف"
-                target="_blank"
-                class="block w-full bg-green-500 text-white py-3 rounded-xl font-semibold hover:bg-green-600 transition-colors duration-300"
-              >
-                استفسار واتساب
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- جدة - الدمام -->
-        <div class="group bg-gradient-to-br from-blue-50 to-white rounded-3xl p-8 border-2 border-blue-100 hover:border-blue-300 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-          <div class="text-center">
-            <div class="bg-blue-500 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <i data-feather="anchor" class="h-10 w-10 text-white"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-accent-800 mb-4 group-hover:text-blue-600 transition-colors duration-300">
-              جدة ← الدمام
-            </h3>
-            <div class="space-y-4 mb-6">
-              <div class="flex justify-between items-center py-2 border-b border-blue-100">
-                <span class="text-accent-600">المسافة:</span>
-                <span class="font-semibold text-accent-800">1,330 كم</span>
-              </div>
-              <div class="flex justify-between items-center py-2 border-b border-blue-100">
-                <span class="text-accent-600">وقت الوصول:</span>
-                <span class="font-semibold text-accent-800">12 ساعة</span>
-              </div>
-              <div class="flex justify-between items-center py-2">
-                <span class="text-accent-600">السعر من:</span>
-                <span class="font-bold text-2xl text-blue-600">2000 ريال</span>
-              </div>
-            </div>
-            <div class="space-y-3">
-              <a 
-                href="tel:+966551606144"
-                class="block w-full bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-300"
-              >
-                احجز الآن
-              </a>
-              <a 
-                href="https://wa.me/966551606144?text=أريد حجز نقل من جدة إلى الدمام"
-                target="_blank"
-                class="block w-full bg-green-500 text-white py-3 rounded-xl font-semibold hover:bg-green-600 transition-colors duration-300"
-              >
-                استفسار واتساب
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- مدن أخرى -->
-        <div class="group bg-gradient-to-br from-accent-50 to-white rounded-3xl p-8 border-2 border-accent-100 hover:border-accent-300 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-          <div class="text-center">
-            <div class="bg-accent-500 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-              <i data-feather="globe" class="h-10 w-10 text-white"></i>
-            </div>
-            <h3 class="text-2xl font-bold text-accent-800 mb-4 group-hover:text-accent-600 transition-colors duration-300">
-              مدن أخرى
-            </h3>
-            <div class="space-y-4 mb-6">
-              <p class="text-accent-600 text-center leading-relaxed">
-                نقدم خدمات النقل إلى جميع مدن المملكة
-              </p>
-              <div class="space-y-2 text-sm">
-                <div class="text-accent-700">• أبها • جازان • حائل</div>
-                <div class="text-accent-700">• تبوك • القصيم • نجران</div>
-                <div class="text-accent-700">• الباحة • عرعر • سكاكا</div>
-              </div>
-            </div>
-            <div class="space-y-3">
-              <a 
-                href="tel:+966551606144"
-                class="block w-full bg-accent-600 text-white py-3 rounded-xl font-semibold hover:bg-accent-700 transition-colors duration-300"
-              >
-                استفسر عن الأسعار
-              </a>
-              <a 
-                href="https://wa.me/966551606144?text=أريد معرفة أسعار النقل لمدن أخرى"
-                target="_blank"
-                class="block w-full bg-green-500 text-white py-3 rounded-xl font-semibold hover:bg-green-600 transition-colors duration-300"
-              >
-                واتساب
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Intercity Features -->
-      <div class="mt-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-3xl p-8 text-white">
-        <div class="text-center mb-8">
-          <h3 class="text-3xl font-bold mb-4">مميزات النقل بين المدن</h3>
-          <p class="text-xl opacity-90">خدمة متكاملة وآمنة لجميع أنواع المركبات</p>
-        </div>
-        <div class="grid md:grid-cols-4 gap-6">
-          <div class="text-center">
-            <div class="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <i data-feather="shield-check" class="h-8 w-8 text-white"></i>
-            </div>
-            <h4 class="font-semibold mb-2">تأمين شامل</h4>
-            <p class="text-sm opacity-80">حماية كاملة أثناء النقل</p>
-          </div>
-          <div class="text-center">
-            <div class="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <i data-feather="users" class="h-8 w-8 text-white"></i>
-            </div>
-            <h4 class="font-semibold mb-2">فريق محترف</h4>
-            <p class="text-sm opacity-80">سائقون مدربون وذوو خبرة</p>
-          </div>
-          <div class="text-center">
-            <div class="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <i data-feather="clock" class="h-8 w-8 text-white"></i>
-            </div>
-            <h4 class="font-semibold mb-2">مواعيد دقيقة</h4>
-            <p class="text-sm opacity-80">التزام بأوقات التسليم</p>
-          </div>
-          <div class="text-center">
-            <div class="bg-white/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-              <i data-feather="phone" class="h-8 w-8 text-white"></i>
-            </div>
-            <h4 class="font-semibold mb-2">متابعة مستمرة</h4>
-            <p class="text-sm opacity-80">تحديثات دورية أثناء النقل</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Why Choose Us -->
   <section class="py-16 px-4 bg-accent-50">
     <div class="max-w-4xl mx-auto text-center">
@@ -872,326 +219,6 @@ import OptimizedImage from '../components/OptimizedImage.astro';
           <div class="text-right">
             <h4 class="font-semibold text-accent-800">تغطية شاملة</h4>
             <p class="text-accent-600">نخدم جدة والمناطق المجاورة</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Jeddah Areas Section -->
-  <section class="py-20 px-4 bg-gradient-to-br from-accent-50 via-white to-primary-50">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-accent-800 mb-6">أحياء جدة المغطاة</h2>
-        <p class="text-xl text-accent-600 max-w-4xl mx-auto">
-          نخدم جميع أحياء جدة بفريق متخصص ومعدات حديثة • وصول سريع وخدمة موثوقة في كل المناطق
-        </p>
-      </div>
-
-      <!-- Featured Areas Grid -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-        <!-- شمال جدة -->
-        <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-accent-100 hover:border-primary-300 transform hover:-translate-y-2">
-          <div class="bg-gradient-to-br from-primary-500 to-primary-700 p-6 text-white">
-            <div class="flex items-center justify-between mb-4">
-              <h3 class="text-xl font-bold">شمال جدة</h3>
-              <i data-feather="navigation" class="h-6 w-6"></i>
-            </div>
-            <p class="text-primary-100 text-sm">المناطق الشمالية الحديثة</p>
-          </div>
-          <div class="p-6">
-            <div class="space-y-3">
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-primary-500"></i>
-                <span class="text-accent-700 text-sm">أبحر الشمالية</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-primary-500"></i>
-                <span class="text-accent-700 text-sm">الشاطئ</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-primary-500"></i>
-                <span class="text-accent-700 text-sm">النعيم</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-primary-500"></i>
-                <span class="text-accent-700 text-sm">العزيزية</span>
-              </div>
-            </div>
-            <div class="mt-6 pt-4 border-t border-accent-100">
-              <a 
-                href="https://wa.me/966551606144?text=أحتاج خدمة سطحة في شمال جدة"
-                target="_blank"
-                class="flex items-center justify-center w-full py-2 bg-primary-50 text-primary-600 rounded-lg text-sm font-medium hover:bg-primary-100 transition-colors duration-300"
-              >
-                <i data-feather="phone" class="h-4 w-4 ml-1"></i>
-                اطلب الخدمة
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- وسط جدة -->
-        <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-accent-100 hover:border-secondary-300 transform hover:-translate-y-2">
-          <div class="bg-gradient-to-br from-secondary-500 to-secondary-700 p-6 text-white">
-            <div class="flex items-center justify-between mb-4">
-              <h3 class="text-xl font-bold">وسط جدة</h3>
-              <i data-feather="target" class="h-6 w-6"></i>
-            </div>
-            <p class="text-secondary-100 text-sm">قلب المدينة النابض</p>
-          </div>
-          <div class="p-6">
-            <div class="space-y-3">
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-secondary-500"></i>
-                <span class="text-accent-700 text-sm">البلد</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-secondary-500"></i>
-                <span class="text-accent-700 text-sm">الصفا</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-secondary-500"></i>
-                <span class="text-accent-700 text-sm">الروضة</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-secondary-500"></i>
-                <span class="text-accent-700 text-sm">المرجان</span>
-              </div>
-            </div>
-            <div class="mt-6 pt-4 border-t border-accent-100">
-              <a 
-                href="https://wa.me/966551606144?text=أحتاج خدمة سطحة في وسط جدة"
-                target="_blank"
-                class="flex items-center justify-center w-full py-2 bg-secondary-50 text-secondary-600 rounded-lg text-sm font-medium hover:bg-secondary-100 transition-colors duration-300"
-              >
-                <i data-feather="phone" class="h-4 w-4 ml-1"></i>
-                اطلب الخدمة
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- جنوب جدة -->
-        <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-accent-100 hover:border-green-300 transform hover:-translate-y-2">
-          <div class="bg-gradient-to-br from-green-500 to-green-700 p-6 text-white">
-            <div class="flex items-center justify-between mb-4">
-              <h3 class="text-xl font-bold">جنوب جدة</h3>
-              <i data-feather="compass" class="h-6 w-6"></i>
-            </div>
-            <p class="text-green-100 text-sm">المناطق الجنوبية المتطورة</p>
-          </div>
-          <div class="p-6">
-            <div class="space-y-3">
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">أبحر الجنوبية</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">الحمراء</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">الفيصلية</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">مدائن الفهد</span>
-              </div>
-            </div>
-            <div class="mt-6 pt-4 border-t border-accent-100">
-              <a 
-                href="https://wa.me/966551606144?text=أحتاج خدمة سطحة في جنوب جدة"
-                target="_blank"
-                class="flex items-center justify-center w-full py-2 bg-green-50 text-green-600 rounded-lg text-sm font-medium hover:bg-green-100 transition-colors duration-300"
-              >
-                <i data-feather="phone" class="h-4 w-4 ml-1"></i>
-                اطلب الخدمة
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- شرق جدة -->
-        <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-accent-100 hover:border-purple-300 transform hover:-translate-y-2">
-          <div class="bg-gradient-to-br from-purple-500 to-purple-700 p-6 text-white">
-            <div class="flex items-center justify-between mb-4">
-              <h3 class="text-xl font-bold">شرق جدة</h3>
-              <i data-feather="sunrise" class="h-6 w-6"></i>
-            </div>
-            <p class="text-purple-100 text-sm">المناطق الشرقية الحيوية</p>
-          </div>
-          <div class="p-6">
-            <div class="space-y-3">
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-purple-500"></i>
-                <span class="text-accent-700 text-sm">السليمانية</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-purple-500"></i>
-                <span class="text-accent-700 text-sm">الفلاح</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-purple-500"></i>
-                <span class="text-accent-700 text-sm">النزلة الشرقية</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="map-pin" class="h-4 w-4 text-purple-500"></i>
-                <span class="text-accent-700 text-sm">الربوة</span>
-              </div>
-            </div>
-            <div class="mt-6 pt-4 border-t border-accent-100">
-              <a 
-                href="https://wa.me/966551606144?text=أحتاج خدمة سطحة في شرق جدة"
-                target="_blank"
-                class="flex items-center justify-center w-full py-2 bg-purple-50 text-purple-600 rounded-lg text-sm font-medium hover:bg-purple-100 transition-colors duration-300"
-              >
-                <i data-feather="phone" class="h-4 w-4 ml-1"></i>
-                اطلب الخدمة
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- All Areas List -->
-      <div class="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-accent-200">
-        <h3 class="text-2xl font-bold text-accent-800 mb-8 text-center">جميع الأحياء المغطاة</h3>
-        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <!-- Column 1 -->
-          <div>
-            <h4 class="font-semibold text-primary-600 mb-4 pb-2 border-b border-primary-200">شمال جدة</h4>
-            <div class="space-y-2">
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">أبحر الشمالية</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">الشاطئ</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">النعيم</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">العزيزية</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">الورود</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Column 2 -->
-          <div>
-            <h4 class="font-semibold text-secondary-600 mb-4 pb-2 border-b border-secondary-200">وسط جدة</h4>
-            <div class="space-y-2">
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">البلد</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">الصفا</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">الروضة</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">المرجان</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">الكندرة</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Column 3 -->
-          <div>
-            <h4 class="font-semibold text-green-600 mb-4 pb-2 border-b border-green-200">جنوب جدة</h4>
-            <div class="space-y-2">
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">أبحر الجنوبية</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">الحمراء</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">الفيصلية</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">مدائن الفهد</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">الجوهرة</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Column 4 -->
-          <div>
-            <h4 class="font-semibold text-purple-600 mb-4 pb-2 border-b border-purple-200">شرق جدة</h4>
-            <div class="space-y-2">
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">السليمانية</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">الفلاح</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">النزلة الشرقية</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">الربوة</span>
-              </div>
-              <div class="flex items-center space-x-reverse space-x-2">
-                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-                <span class="text-accent-700 text-sm">الأندلس</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Quick Contact -->
-        <div class="mt-12 pt-8 border-t border-accent-200">
-          <div class="text-center">
-            <h4 class="text-xl font-bold text-accent-800 mb-4">لا تجد حيك في القائمة؟</h4>
-            <p class="text-accent-600 mb-6">نخدم جميع أحياء جدة وضواحيها - اتصل بنا للتأكد من التغطية</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="tel:+966551606144"
-                class="inline-flex items-center px-8 py-3 bg-primary-600 text-white rounded-xl font-semibold hover:bg-primary-700 transition-colors duration-300"
-              >
-                <i data-feather="phone-call" class="h-5 w-5 ml-2"></i>
-                اتصل للاستفسار
-              </a>
-              <a 
-                href="https://wa.me/966551606144?text=أريد التأكد من تغطية الخدمة لحيي"
-                target="_blank"
-                class="inline-flex items-center px-8 py-3 bg-green-500 text-white rounded-xl font-semibold hover:bg-green-600 transition-colors duration-300"
-              >
-                <svg class="h-5 w-5 ml-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                </svg>
-                واتساب
-              </a>
-            </div>
           </div>
         </div>
       </div>

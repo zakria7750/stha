@@ -1,13 +1,6 @@
 # Overview
 
-This is an Astro-based static site generator project for "سطحة جدة أبو فهد" (Jeddah Abu Fahd Flatbed Service), a professional towing and vehicle transport service in Jeddah, Saudi Arabia. The website is fully optimized for SEO, performance, and user experience with comprehensive Arabic RTL support. The project follows modern web development best practices with advanced SEO optimization, geographic targeting, and performance enhancements.
-
-**Latest Updates (Sept 2025):**
-- ✅ Advanced SEO optimization with geo-targeting and structured data
-- ✅ Performance optimization with lazy loading and image compression
-- ✅ Enhanced Schema.org markup for local business visibility  
-- ✅ Modern error handling with custom 404 page
-- ✅ Optimized file structure and removed unnecessary assets
+This is an Astro-based static site generator project configured with Tailwind CSS for styling. The project appears to be for a flatbed trucking company website (jeddah-abufahd-flatbed.com) based on the robots.txt sitemap reference. The architecture follows Astro's modern static site generation approach with component-based development and build-time optimization.
 
 # User Preferences
 
@@ -40,29 +33,7 @@ Preferred communication style: Simple, everyday language.
 - **Robots.txt**: Configured for search engine crawling with appropriate directives
 - **Meta Management**: Built-in SEO optimization features
 
-# Technical Enhancements
-
-## SEO Optimization Features
-- **Advanced Meta Tags**: Comprehensive meta information including geo-targeting for Jeddah, Saudi Arabia
-- **Schema.org Markup**: Rich structured data for local business with services, ratings, and contact information
-- **Geographic Targeting**: ICBM coordinates and geo tags for local search optimization
-- **Enhanced Open Graph**: Complete social media sharing optimization
-- **Updated Sitemap**: XML sitemap with image references and current dates
-
-## Performance Optimizations
-- **Optimized Images**: Custom OptimizedImage component with lazy loading and responsive sizing
-- **Reduced File Size**: Removed unnecessary assets and cleaned up project structure
-- **Preconnect Resources**: Optimized external resource loading
-- **Deferred Scripts**: Non-blocking JavaScript loading
-- **Modern Favicon**: SVG-based icon for better scaling
-
-## User Experience Improvements
-- **Custom 404 Page**: Professional error handling with navigation options
-- **Mobile Optimization**: Enhanced mobile experience with proper viewport settings
-- **RTL Support**: Full Arabic right-to-left text support
-- **Accessibility**: Improved alt texts and semantic HTML structure
-
-## External Dependencies
+# External Dependencies
 
 ## Core Framework Dependencies
 - **Astro**: Main static site generator framework
@@ -85,6 +56,5 @@ Preferred communication style: Simple, everyday language.
 - **import-meta-resolve**: Module resolution utilities
 
 ## Deployment Target
-- **Static Hosting**: Optimized for CDN deployment (domain: jeddah-abufahd-flatbed.com)
-- **SEO Ready**: Fully optimized with advanced robots.txt, sitemap, and local business structured data
-- **Performance Ready**: Optimized for fast loading with image optimization and resource preloading
+- **Static Hosting**: Optimized for CDN deployment (referenced domain: jeddah-abufahd-flatbed.com)
+- **SEO Ready**: Configured with robots.txt and sitemap for search engine optimization
