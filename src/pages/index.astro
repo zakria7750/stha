@@ -98,76 +98,118 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
       
       <div class="grid md:grid-cols-3 gap-8 mb-12">
-        <div class="group text-center p-8 rounded-2xl border-2 border-accent-100 hover:border-primary-300 hover:shadow-2xl transition-all duration-300 bg-gradient-to-b from-white to-accent-50">
-          <div class="bg-primary-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-            <i data-feather="truck" class="h-10 w-10 text-primary-600"></i>
+        <!-- Service Card 1: Vehicle Transport -->
+        <div class="group relative overflow-hidden rounded-2xl border-2 border-accent-100 hover:border-primary-300 hover:shadow-2xl transition-all duration-300 bg-white">
+          <!-- Image Section -->
+          <div class="relative h-48 overflow-hidden">
+            <img 
+              src="/attached_assets/generated_images/Flatbed_truck_Jeddah_cityscape_78c61ca5.png" 
+              alt="خدمة نقل المركبات بالسطحة في جدة" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 bg-primary-600 rounded-full p-3">
+              <i data-feather="truck" class="h-6 w-6 text-white"></i>
+            </div>
           </div>
-          <h3 class="text-2xl font-bold text-accent-800 mb-4">نقل المركبات</h3>
-          <p class="text-accent-600 mb-6 leading-relaxed">
-            سحب ونقل آمن لجميع أنواع السيارات والشاحنات والدراجات النارية من أي مكان في جدة
-          </p>
-          <ul class="text-sm text-accent-700 space-y-2">
-            <li class="flex items-center justify-center space-x-reverse space-x-2">
-              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-              <span>سيارات معطلة</span>
-            </li>
-            <li class="flex items-center justify-center space-x-reverse space-x-2">
-              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-              <span>حوادث الطرق</span>
-            </li>
-            <li class="flex items-center justify-center space-x-reverse space-x-2">
-              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-              <span>نقل بين المدن</span>
-            </li>
-          </ul>
+          
+          <!-- Content Section -->
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-accent-800 mb-4">نقل المركبات</h3>
+            <p class="text-accent-600 mb-6 leading-relaxed">
+              سحب ونقل آمن لجميع أنواع السيارات والشاحنات والدراجات النارية من أي مكان في جدة
+            </p>
+            <ul class="text-sm text-accent-700 space-y-2">
+              <li class="flex items-center space-x-reverse space-x-2">
+                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+                <span>سيارات معطلة</span>
+              </li>
+              <li class="flex items-center space-x-reverse space-x-2">
+                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+                <span>حوادث الطرق</span>
+              </li>
+              <li class="flex items-center space-x-reverse space-x-2">
+                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+                <span>نقل بين المدن</span>
+              </li>
+            </ul>
+          </div>
         </div>
         
-        <div class="group text-center p-8 rounded-2xl border-2 border-accent-100 hover:border-secondary-300 hover:shadow-2xl transition-all duration-300 bg-gradient-to-b from-white to-secondary-50">
-          <div class="bg-secondary-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-            <i data-feather="clock" class="h-10 w-10 text-secondary-600"></i>
+        <!-- Service Card 2: 24/7 Service -->
+        <div class="group relative overflow-hidden rounded-2xl border-2 border-accent-100 hover:border-secondary-300 hover:shadow-2xl transition-all duration-300 bg-white">
+          <!-- Image Section -->
+          <div class="relative h-48 overflow-hidden">
+            <img 
+              src="/attached_assets/generated_images/Customer_service_center_communication_c1f4bee6.png" 
+              alt="خدمة عملاء 24 ساعة لسطحة جدة" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 bg-secondary-600 rounded-full p-3">
+              <i data-feather="clock" class="h-6 w-6 text-white"></i>
+            </div>
           </div>
-          <h3 class="text-2xl font-bold text-accent-800 mb-4">خدمة 24 ساعة</h3>
-          <p class="text-accent-600 mb-6 leading-relaxed">
-            فريق الاستجابة السريعة متاح على مدار الساعة لضمان وصولنا إليك في أسرع وقت ممكن
-          </p>
-          <ul class="text-sm text-accent-700 space-y-2">
-            <li class="flex items-center justify-center space-x-reverse space-x-2">
-              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-              <span>استجابة سريعة</span>
-            </li>
-            <li class="flex items-center justify-center space-x-reverse space-x-2">
-              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-              <span>خدمة طوارئ</span>
-            </li>
-            <li class="flex items-center justify-center space-x-reverse space-x-2">
-              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-              <span>عطلات ومناسبات</span>
-            </li>
-          </ul>
+          
+          <!-- Content Section -->
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-accent-800 mb-4">خدمة 24 ساعة</h3>
+            <p class="text-accent-600 mb-6 leading-relaxed">
+              فريق الاستجابة السريعة متاح على مدار الساعة لضمان وصولنا إليك في أسرع وقت ممكن
+            </p>
+            <ul class="text-sm text-accent-700 space-y-2">
+              <li class="flex items-center space-x-reverse space-x-2">
+                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+                <span>استجابة سريعة</span>
+              </li>
+              <li class="flex items-center space-x-reverse space-x-2">
+                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+                <span>خدمة طوارئ</span>
+              </li>
+              <li class="flex items-center space-x-reverse space-x-2">
+                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+                <span>عطلات ومناسبات</span>
+              </li>
+            </ul>
+          </div>
         </div>
         
-        <div class="group text-center p-8 rounded-2xl border-2 border-accent-100 hover:border-green-300 hover:shadow-2xl transition-all duration-300 bg-gradient-to-b from-white to-green-50">
-          <div class="bg-green-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-            <i data-feather="shield-check" class="h-10 w-10 text-green-600"></i>
+        <!-- Service Card 3: Professional Team -->
+        <div class="group relative overflow-hidden rounded-2xl border-2 border-accent-100 hover:border-green-300 hover:shadow-2xl transition-all duration-300 bg-white">
+          <!-- Image Section -->
+          <div class="relative h-48 overflow-hidden">
+            <img 
+              src="/attached_assets/generated_images/Professional_towing_team_facility_d1390c74.png" 
+              alt="فريق سطحة جدة المحترف ومعداتهم المتطورة" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-4 left-4 bg-green-600 rounded-full p-3">
+              <i data-feather="shield-check" class="h-6 w-6 text-white"></i>
+            </div>
           </div>
-          <h3 class="text-2xl font-bold text-accent-800 mb-4">أمان مضمون</h3>
-          <p class="text-accent-600 mb-6 leading-relaxed">
-            معدات حديثة وفريق مدرب ومؤهل يضمن سلامة مركبتك طوال عملية النقل والتعامل
-          </p>
-          <ul class="text-sm text-accent-700 space-y-2">
-            <li class="flex items-center justify-center space-x-reverse space-x-2">
-              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-              <span>معدات متطورة</span>
-            </li>
-            <li class="flex items-center justify-center space-x-reverse space-x-2">
-              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-              <span>فريق محترف</span>
-            </li>
-            <li class="flex items-center justify-center space-x-reverse space-x-2">
-              <i data-feather="check" class="h-4 w-4 text-green-500"></i>
-              <span>تأمين شامل</span>
-            </li>
-          </ul>
+          
+          <!-- Content Section -->
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-accent-800 mb-4">أمان مضمون</h3>
+            <p class="text-accent-600 mb-6 leading-relaxed">
+              معدات حديثة وفريق مدرب ومؤهل يضمن سلامة مركبتك طوال عملية النقل والتعامل
+            </p>
+            <ul class="text-sm text-accent-700 space-y-2">
+              <li class="flex items-center space-x-reverse space-x-2">
+                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+                <span>معدات متطورة</span>
+              </li>
+              <li class="flex items-center space-x-reverse space-x-2">
+                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+                <span>فريق محترف</span>
+              </li>
+              <li class="flex items-center space-x-reverse space-x-2">
+                <i data-feather="check" class="h-4 w-4 text-green-500"></i>
+                <span>تأمين شامل</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       

@@ -32,131 +32,241 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <div class="max-w-6xl mx-auto px-4 py-12">
 
-    <!-- Blog Grid - For now showing placeholder structure -->
+    <!-- Featured Article -->
+    <section class="mb-16">
+      <div class="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl overflow-hidden">
+        <div class="md:flex">
+          <div class="md:w-1/2">
+            <img 
+              src="/attached_assets/generated_images/Automotive_blog_knowledge_center_ef0b1a00.png" 
+              alt="مركز المعرفة في صيانة السيارات" 
+              class="w-full h-64 md:h-full object-cover"
+            >
+          </div>
+          <div class="md:w-1/2 p-8 text-white">
+            <span class="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-4 inline-block">
+              <i data-feather="star" class="h-4 w-4 inline ml-1"></i>
+              مقال مميز
+            </span>
+            <h2 class="text-3xl font-bold mb-4">دليلك الشامل لصيانة السيارة</h2>
+            <p class="text-white/90 mb-6 leading-relaxed">
+              تعرف على أهم خطوات الصيانة الوقائية التي تضمن سلامة مركبتك وتوفر عليك التكاليف العالية للإصلاحات الطارئة. دليل شامل من خبراء سطحة جدة أبو فهد.
+            </p>
+            <a href="#maintenance-guide" class="inline-flex items-center bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200">
+              اقرأ المقال كاملاً
+              <i data-feather="arrow-left" class="h-4 w-4 mr-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Grid -->
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
       
       <!-- Blog Post 1 -->
       <article class="bg-white border border-accent-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-200">
-        <div class="bg-gradient-to-br from-primary-100 to-primary-200 h-48 flex items-center justify-center">
-          <i data-feather="tool" class="h-16 w-16 text-primary-600"></i>
+        <div class="relative h-48 overflow-hidden">
+          <img 
+            src="/attached_assets/generated_images/Professional_towing_team_facility_d1390c74.png" 
+            alt="نصائح الصيانة الوقائية للمركبات" 
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          >
+          <div class="absolute top-4 right-4 bg-primary-600 text-white px-3 py-1 rounded-full text-sm">
+            جديد
+          </div>
         </div>
         <div class="p-6">
           <div class="flex items-center text-sm text-accent-500 mb-3">
             <i data-feather="calendar" class="h-4 w-4 ml-1"></i>
-            <span>قريباً</span>
+            <span>ديسمبر 2024</span>
           </div>
           <h3 class="text-xl font-bold text-accent-800 mb-3">نصائح الصيانة الوقائية للمركبات</h3>
           <p class="text-accent-600 mb-4">
-            تعرف على أهم خطوات الصيانة الوقائية التي تحمي مركبتك من الأعطال المفاجئة
+            اكتشف كيفية الحفاظ على سيارتك في أفضل حالة من خلال برنامج صيانة منتظم يوفر عليك الأعطال الطارئة والتكاليف العالية.
           </p>
           <div class="flex items-center justify-between">
             <span class="bg-primary-100 text-primary-800 px-3 py-1 rounded-full text-sm">صيانة</span>
-            <span class="text-accent-500 text-sm">قادم قريباً</span>
+            <a href="#maintenance-tips" class="text-primary-600 hover:text-primary-800 text-sm font-medium">اقرأ المزيد</a>
           </div>
         </div>
       </article>
 
       <!-- Blog Post 2 -->
       <article class="bg-white border border-accent-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-200">
-        <div class="bg-gradient-to-br from-secondary-100 to-secondary-200 h-48 flex items-center justify-center">
-          <i data-feather="shield" class="h-16 w-16 text-secondary-600"></i>
+        <div class="relative h-48 overflow-hidden">
+          <img 
+            src="/attached_assets/generated_images/Customer_service_center_communication_c1f4bee6.png" 
+            alt="القيادة الآمنة في الطرق السريعة" 
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          >
+          <div class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm">
+            شائع
+          </div>
         </div>
         <div class="p-6">
           <div class="flex items-center text-sm text-accent-500 mb-3">
             <i data-feather="calendar" class="h-4 w-4 ml-1"></i>
-            <span>قريباً</span>
+            <span>نوفمبر 2024</span>
           </div>
           <h3 class="text-xl font-bold text-accent-800 mb-3">القيادة الآمنة في الطرق السريعة</h3>
           <p class="text-accent-600 mb-4">
-            إرشادات مهمة للقيادة الآمنة وتجنب الحوادث في الطرق السريعة
+            تعلم أهم قواعد القيادة الآمنة على الطرق السريعة وكيفية تجنب الحوادث، مع نصائح خاصة للقيادة في الأجواء الصعبة.
           </p>
           <div class="flex items-center justify-between">
             <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">أمان</span>
-            <span class="text-accent-500 text-sm">قادم قريباً</span>
+            <a href="#safety-driving" class="text-primary-600 hover:text-primary-800 text-sm font-medium">اقرأ المزيد</a>
           </div>
         </div>
       </article>
 
       <!-- Blog Post 3 -->
       <article class="bg-white border border-accent-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-200">
-        <div class="bg-gradient-to-br from-green-100 to-green-200 h-48 flex items-center justify-center">
-          <i data-feather="truck" class="h-16 w-16 text-green-600"></i>
+        <div class="relative h-48 overflow-hidden">
+          <img 
+            src="/attached_assets/generated_images/Flatbed_truck_Jeddah_cityscape_78c61ca5.png" 
+            alt="كيف تختار خدمة السطحة المناسبة" 
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+          >
         </div>
         <div class="p-6">
           <div class="flex items-center text-sm text-accent-500 mb-3">
             <i data-feather="calendar" class="h-4 w-4 ml-1"></i>
-            <span>قريباً</span>
+            <span>أكتوبر 2024</span>
           </div>
           <h3 class="text-xl font-bold text-accent-800 mb-3">كيف تختار خدمة السطحة المناسبة</h3>
           <p class="text-accent-600 mb-4">
-            معايير مهمة لاختيار خدمة السطحة المناسبة لنوع مركبتك
+            دليل شامل لاختيار أفضل خدمة سطحة تناسب احتياجاتك، مع التركيز على معايير الجودة والسرعة والأمان.
           </p>
           <div class="flex items-center justify-between">
             <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">نصائح</span>
-            <span class="text-accent-500 text-sm">قادم قريباً</span>
+            <a href="#choosing-towing" class="text-primary-600 hover:text-primary-800 text-sm font-medium">اقرأ المزيد</a>
           </div>
         </div>
       </article>
 
       <!-- Blog Post 4 -->
       <article class="bg-white border border-accent-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-200">
-        <div class="bg-gradient-to-br from-yellow-100 to-yellow-200 h-48 flex items-center justify-center">
+        <div class="relative h-48 bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center">
           <i data-feather="alert-triangle" class="h-16 w-16 text-yellow-600"></i>
         </div>
         <div class="p-6">
           <div class="flex items-center text-sm text-accent-500 mb-3">
             <i data-feather="calendar" class="h-4 w-4 ml-1"></i>
-            <span>قريباً</span>
+            <span>سبتمبر 2024</span>
           </div>
           <h3 class="text-xl font-bold text-accent-800 mb-3">ما تفعله عند تعطل السيارة</h3>
           <p class="text-accent-600 mb-4">
-            خطوات مهمة يجب اتباعها عند تعطل سيارتك في الطريق
+            خطوات مهمة وعملية يجب اتباعها عند تعطل سيارتك في الطريق لضمان سلامتك وسلامة الآخرين حتى وصول المساعدة.
           </p>
           <div class="flex items-center justify-between">
             <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">طوارئ</span>
-            <span class="text-accent-500 text-sm">قادم قريباً</span>
+            <a href="#car-breakdown" class="text-primary-600 hover:text-primary-800 text-sm font-medium">اقرأ المزيد</a>
           </div>
         </div>
       </article>
 
       <!-- Blog Post 5 -->
       <article class="bg-white border border-accent-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-200">
-        <div class="bg-gradient-to-br from-blue-100 to-blue-200 h-48 flex items-center justify-center">
+        <div class="relative h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
           <i data-feather="battery" class="h-16 w-16 text-blue-600"></i>
         </div>
         <div class="p-6">
           <div class="flex items-center text-sm text-accent-500 mb-3">
             <i data-feather="calendar" class="h-4 w-4 ml-1"></i>
-            <span>قريباً</span>
+            <span>أغسطس 2024</span>
           </div>
-          <h3 class="text-xl font-bold text-accent-800 mb-3">العناية ببطارية السيارة</h3>
+          <h3 class="text-xl font-bold text-accent-800 mb-3">العناية ببطارية السيارة في الصيف</h3>
           <p class="text-accent-600 mb-4">
-            كيفية الحفاظ على بطارية سيارتك وإطالة عمرها الافتراضي
+            نصائح خاصة للحفاظ على بطارية سيارتك خلال فصل الصيف الحار في جدة، وكيفية إطالة عمرها الافتراضي.
           </p>
           <div class="flex items-center justify-between">
             <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">بطارية</span>
-            <span class="text-accent-500 text-sm">قادم قريباً</span>
+            <a href="#battery-care" class="text-primary-600 hover:text-primary-800 text-sm font-medium">اقرأ المزيد</a>
           </div>
         </div>
       </article>
 
       <!-- Blog Post 6 -->
       <article class="bg-white border border-accent-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-200">
-        <div class="bg-gradient-to-br from-indigo-100 to-indigo-200 h-48 flex items-center justify-center">
+        <div class="relative h-48 bg-gradient-to-br from-indigo-100 to-indigo-200 flex items-center justify-center">
           <i data-feather="map" class="h-16 w-16 text-indigo-600"></i>
         </div>
         <div class="p-6">
           <div class="flex items-center text-sm text-accent-500 mb-3">
             <i data-feather="calendar" class="h-4 w-4 ml-1"></i>
-            <span>قريباً</span>
+            <span>يوليو 2024</span>
           </div>
           <h3 class="text-xl font-bold text-accent-800 mb-3">التخطيط للرحلات الطويلة</h3>
           <p class="text-accent-600 mb-4">
-            نصائح للتحضير والتخطيط للرحلات الطويلة بالسيارة
+            دليل شامل للتحضير والتخطيط للرحلات الطويلة بالسيارة، مع قائمة فحص شاملة لضمان رحلة آمنة وممتعة.
           </p>
           <div class="flex items-center justify-between">
             <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">سفر</span>
-            <span class="text-accent-500 text-sm">قادم قريباً</span>
+            <a href="#long-trips" class="text-primary-600 hover:text-primary-800 text-sm font-medium">اقرأ المزيد</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 7 -->
+      <article class="bg-white border border-accent-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-200">
+        <div class="relative h-48 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+          <i data-feather="thermometer" class="h-16 w-16 text-orange-600"></i>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-sm text-accent-500 mb-3">
+            <i data-feather="calendar" class="h-4 w-4 ml-1"></i>
+            <span>يونيو 2024</span>
+          </div>
+          <h3 class="text-xl font-bold text-accent-800 mb-3">مشاكل ارتفاع حرارة المحرك</h3>
+          <p class="text-accent-600 mb-4">
+            تعرف على أسباب ارتفاع حرارة المحرك وكيفية تجنبها، مع خطوات عملية للتعامل مع هذه المشكلة الشائعة.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">محرك</span>
+            <a href="#engine-overheating" class="text-primary-600 hover:text-primary-800 text-sm font-medium">اقرأ المزيد</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 8 -->
+      <article class="bg-white border border-accent-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-200">
+        <div class="relative h-48 bg-gradient-to-br from-emerald-100 to-emerald-200 flex items-center justify-center">
+          <i data-feather="dollar-sign" class="h-16 w-16 text-emerald-600"></i>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-sm text-accent-500 mb-3">
+            <i data-feather="calendar" class="h-4 w-4 ml-1"></i>
+            <span>مايو 2024</span>
+          </div>
+          <h3 class="text-xl font-bold text-accent-800 mb-3">توفير الوقود: نصائح عملية</h3>
+          <p class="text-accent-600 mb-4">
+            طرق فعالة لتوفير استهلاك الوقود وتحسين كفاءة سيارتك، مع نصائح للقيادة الاقتصادية في الطرق الحضرية.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm">اقتصاد</span>
+            <a href="#fuel-saving" class="text-primary-600 hover:text-primary-800 text-sm font-medium">اقرأ المزيد</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Blog Post 9 -->
+      <article class="bg-white border border-accent-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-200">
+        <div class="relative h-48 bg-gradient-to-br from-teal-100 to-teal-200 flex items-center justify-center">
+          <i data-feather="check-circle" class="h-16 w-16 text-teal-600"></i>
+        </div>
+        <div class="p-6">
+          <div class="flex items-center text-sm text-accent-500 mb-3">
+            <i data-feather="calendar" class="h-4 w-4 ml-1"></i>
+            <span>أبريل 2024</span>
+          </div>
+          <h3 class="text-xl font-bold text-accent-800 mb-3">فحص السيارة قبل السفر</h3>
+          <p class="text-accent-600 mb-4">
+            قائمة شاملة لفحص سيارتك قبل السفر لضمان رحلة آمنة، مع التركيز على النقاط الحساسة التي يجب فحصها.
+          </p>
+          <div class="flex items-center justify-between">
+            <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">فحص</span>
+            <a href="#pre-travel-check" class="text-primary-600 hover:text-primary-800 text-sm font-medium">اقرأ المزيد</a>
           </div>
         </div>
       </article>

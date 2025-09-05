@@ -365,35 +365,291 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
     </section>
 
+    <!-- Service Packages -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-center text-accent-800 mb-12">باقات الخدمة المتميزة</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Basic Package -->
+        <div class="bg-white border-2 border-accent-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <div class="text-center mb-6">
+            <div class="bg-primary-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+              <i data-feather="truck" class="h-10 w-10 text-primary-600"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-accent-800 mb-2">الباقة الأساسية</h3>
+            <p class="text-accent-600">للاحتياجات اليومية</p>
+          </div>
+          
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>نقل السيارات داخل جدة</span>
+            </li>
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>خدمة 24 ساعة</span>
+            </li>
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>وقت وصول: 15-20 دقيقة</span>
+            </li>
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>تأمين أساسي</span>
+            </li>
+          </ul>
+          
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary-600 mb-2">من 150 ريال</div>
+            <p class="text-sm text-accent-500">حسب المسافة</p>
+          </div>
+        </div>
+        
+        <!-- Premium Package -->
+        <div class="bg-gradient-to-b from-secondary-50 to-white border-2 border-secondary-300 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 relative">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+            <span class="bg-secondary-500 text-white px-6 py-2 rounded-full text-sm font-medium">الأكثر طلباً</span>
+          </div>
+          
+          <div class="text-center mb-6 mt-4">
+            <div class="bg-secondary-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+              <i data-feather="star" class="h-10 w-10 text-secondary-600"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-accent-800 mb-2">الباقة المميزة</h3>
+            <p class="text-accent-600">للعملاء المتميزين</p>
+          </div>
+          
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>نقل داخل وخارج جدة</span>
+            </li>
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>خدمة أولوية</span>
+            </li>
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>وقت وصول: 10-15 دقيقة</span>
+            </li>
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>تأمين شامل</span>
+            </li>
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>خدمة عملاء مخصصة</span>
+            </li>
+          </ul>
+          
+          <div class="text-center">
+            <div class="text-3xl font-bold text-secondary-600 mb-2">من 200 ريال</div>
+            <p class="text-sm text-accent-500">أفضل قيمة</p>
+          </div>
+        </div>
+        
+        <!-- VIP Package -->
+        <div class="bg-white border-2 border-purple-200 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+          <div class="text-center mb-6">
+            <div class="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+              <i data-feather="crown" class="h-10 w-10 text-purple-600"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-accent-800 mb-2">باقة VIP</h3>
+            <p class="text-accent-600">للعملاء المميزين</p>
+          </div>
+          
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>نقل على مستوى المملكة</span>
+            </li>
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>أولوية قصوى</span>
+            </li>
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>وقت وصول: 5-10 دقائق</span>
+            </li>
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>تأمين ذهبي</span>
+            </li>
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>مدير حساب شخصي</span>
+            </li>
+            <li class="flex items-center space-x-reverse space-x-3">
+              <i data-feather="check" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+              <span>تتبع مباشر للمركبة</span>
+            </li>
+          </ul>
+          
+          <div class="text-center">
+            <div class="text-3xl font-bold text-purple-600 mb-2">من 350 ريال</div>
+            <p class="text-sm text-accent-500">خدمة حصرية</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipment & Fleet -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-center text-accent-800 mb-12">أسطولنا ومعداتنا</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white border border-accent-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-200">
+          <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <i data-feather="truck" class="h-8 w-8 text-blue-600"></i>
+          </div>
+          <h4 class="font-bold text-accent-800 mb-2">سطحات حديثة</h4>
+          <p class="text-sm text-accent-600">أسطول من أحدث سطحات النقل</p>
+          <div class="text-lg font-bold text-blue-600 mt-2">15+ سطحة</div>
+        </div>
+        
+        <div class="bg-white border border-accent-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-200">
+          <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <i data-feather="shield" class="h-8 w-8 text-green-600"></i>
+          </div>
+          <h4 class="font-bold text-accent-800 mb-2">معدات أمان</h4>
+          <p class="text-sm text-accent-600">أحدث معدات الأمان والسلامة</p>
+          <div class="text-lg font-bold text-green-600 mt-2">100% آمن</div>
+        </div>
+        
+        <div class="bg-white border border-accent-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-200">
+          <div class="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <i data-feather="users" class="h-8 w-8 text-orange-600"></i>
+          </div>
+          <h4 class="font-bold text-accent-800 mb-2">فريق مدرب</h4>
+          <p class="text-sm text-accent-600">فريق من السائقين المدربين</p>
+          <div class="text-lg font-bold text-orange-600 mt-2">25+ فني</div>
+        </div>
+        
+        <div class="bg-white border border-accent-200 rounded-lg p-6 text-center hover:shadow-lg transition-shadow duration-200">
+          <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+            <i data-feather="phone" class="h-8 w-8 text-purple-600"></i>
+          </div>
+          <h4 class="font-bold text-accent-800 mb-2">مركز التحكم</h4>
+          <p class="text-sm text-accent-600">مركز تحكم متطور للتنسيق</p>
+          <div class="text-lg font-bold text-purple-600 mt-2">24/7</div>
+        </div>
+      </div>
+    </section>
+
     <!-- Coverage Area -->
     <section class="mb-16">
-      <h2 class="text-3xl font-bold text-center text-accent-800 mb-8">مناطق الخدمة</h2>
+      <h2 class="text-3xl font-bold text-center text-accent-800 mb-8">مناطق الخدمة الشاملة</h2>
       
-      <div class="bg-accent-50 p-8 rounded-lg">
+      <div class="bg-accent-50 p-8 rounded-lg mb-8">
+        <h3 class="text-xl font-bold text-accent-800 mb-6 text-center">داخل جدة - خدمة سريعة (15 دقيقة)</h3>
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">النزلة اليمانية</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">الصفا</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">الروضة</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">الحمراء</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">السلامة</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">البغدادية</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">النعيم</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">الفيحاء</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">المرجان</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">الشرفية</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">العزيزية</span>
+          </div>
+          <div class="flex items-center space-x-reverse space-x-3">
+            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">البوادي</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-secondary-50 p-8 rounded-lg">
+        <h3 class="text-xl font-bold text-accent-800 mb-6 text-center">خارج جدة - خدمة ممتدة</h3>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div class="flex items-center space-x-reverse space-x-3">
-            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
-            <span class="text-accent-700">جدة (جميع الأحياء)</span>
+            <i data-feather="map-pin" class="h-5 w-5 text-secondary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">مكة المكرمة (45 دقيقة)</span>
           </div>
           <div class="flex items-center space-x-reverse space-x-3">
-            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
-            <span class="text-accent-700">مكة المكرمة</span>
+            <i data-feather="map-pin" class="h-5 w-5 text-secondary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">الطائف (90 دقيقة)</span>
           </div>
           <div class="flex items-center space-x-reverse space-x-3">
-            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
-            <span class="text-accent-700">الطائف</span>
+            <i data-feather="map-pin" class="h-5 w-5 text-secondary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">رابغ (60 دقيقة)</span>
           </div>
           <div class="flex items-center space-x-reverse space-x-3">
-            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
-            <span class="text-accent-700">رابغ</span>
+            <i data-feather="map-pin" class="h-5 w-5 text-secondary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">خليص (75 دقيقة)</span>
           </div>
           <div class="flex items-center space-x-reverse space-x-3">
-            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
-            <span class="text-accent-700">خليص</span>
+            <i data-feather="map-pin" class="h-5 w-5 text-secondary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">الكامل (80 دقيقة)</span>
           </div>
           <div class="flex items-center space-x-reverse space-x-3">
-            <i data-feather="map-pin" class="h-5 w-5 text-primary-600 flex-shrink-0"></i>
-            <span class="text-accent-700">الكامل</span>
+            <i data-feather="map-pin" class="h-5 w-5 text-secondary-600 flex-shrink-0"></i>
+            <span class="text-accent-700">الليث (120 دقيقة)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Guarantee -->
+    <section class="mb-16">
+      <div class="bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl p-12 text-white text-center">
+        <h2 class="text-4xl font-bold mb-6">ضماننا لك</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div>
+            <div class="bg-white/20 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+              <i data-feather="clock" class="h-10 w-10 text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">ضمان الوقت</h3>
+            <p class="text-green-100">نصل إليك في الوقت المحدد أو استرد نقودك</p>
+          </div>
+          <div>
+            <div class="bg-white/20 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+              <i data-feather="shield-check" class="h-10 w-10 text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">ضمان الأمان</h3>
+            <p class="text-green-100">تأمين شامل على جميع المركبات المنقولة</p>
+          </div>
+          <div>
+            <div class="bg-white/20 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+              <i data-feather="star" class="h-10 w-10 text-white"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">ضمان الجودة</h3>
+            <p class="text-green-100">خدمة احترافية بأعلى معايير الجودة</p>
           </div>
         </div>
       </div>
